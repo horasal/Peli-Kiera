@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Peli-Kiera</title><link href="https://aleylara.github.io/Peli-Kiera/" rel="alternate"></link><link href="https://aleylara.github.io/Peli-Kiera/feeds/all.atom.xml" rel="self"></link><id>https://aleylara.github.io/Peli-Kiera/</id><updated>2018-11-16T00:00:00+11:00</updated><subtitle>A Pelican theme for creative writing</subtitle><entry><title>A lightweight theme for Pelican</title><link href="https://aleylara.github.io/Peli-Kiera/a-lightweight-theme-for-pelican.html" rel="alternate"></link><published>2018-11-16T00:00:00+11:00</published><updated>2018-11-16T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-16:/Peli-Kiera/a-lightweight-theme-for-pelican.html</id><summary type="html">&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
+Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&lt;/a&gt; project for the inspiration.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;The theme can be installed by cloning the repo into your 
+themes path and pointing to it in your &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
+&lt;span class="nb"&gt;cd&lt;/span&gt; project-dir/themes
+git clone https://github.com/aleylara/Peli-Kiera
+
+&lt;span class="c1"&gt;# Path …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
+Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&lt;/a&gt; project for the inspiration.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;The theme can be installed by cloning the repo into your 
+themes path and pointing to it in your &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
+&lt;span class="nb"&gt;cd&lt;/span&gt; project-dir/themes
+git clone https://github.com/aleylara/Peli-Kiera
+
+&lt;span class="c1"&gt;# Path to your theme directory in pelicanconf.py&lt;/span&gt;
+&lt;span class="nv"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;themes/Peli-Kiera&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In order to get read times and links between articles, the theme requires &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/readtime"&gt;pelican-readtime&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/neighbors"&gt;neighbors&lt;/a&gt; plugins.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Path to your plugins directory in pelicanconf.py&lt;/span&gt;
+&lt;span class="nv"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="nv"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;readtime&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;neighbors&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Settings&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
+
+&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Author&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Site-Name&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITESUBTITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Site&lt;/span&gt; &lt;span class="n"&gt;Subtitle&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;###########/#######&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;DEFAULT_LANG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;en&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;themes/Peli-Kiera&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;readtime&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;neighbors&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;STATIC_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;images&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;SUMMARY_MAX_LENGTH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;
+&lt;span class="n"&gt;DEFAULT_PAGINATION&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+&lt;span class="n"&gt;GITHUB_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com/&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Feed generation is usually not desired when developing&lt;/span&gt;
+&lt;span class="n"&gt;FEED_ALL_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;feeds/all.atom.xml&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;CATEGORY_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;TRANSLATION_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;AUTHOR_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;AUTHOR_FEED_RSS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;RSS_FEED_SUMMARY_ONLY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Social widget&lt;/span&gt;
+&lt;span class="n"&gt;SOCIAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;twitter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://twitter.com/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;linkedin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://www.linkedin.com&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;github&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;gitlab&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://gitlab.com/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;facebook&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://facebook.com&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;instagram&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://instagram.com&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# DISQUS_SITENAME = &amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="c1"&gt;# GOOGLE_ANALYTICS = &amp;#39;&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Uncomment following line if you want document-relative URLs when developing&lt;/span&gt;
+&lt;span class="c1"&gt;# RELATIVE_URLS = True&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Atom/RSS feeds&lt;/li&gt;
+&lt;li&gt;Mobile friendly &lt;/li&gt;
+&lt;li&gt;Google analytics &lt;/li&gt;
+&lt;li&gt;Comments via Disqus&lt;/li&gt;
+&lt;li&gt;Font awesome icons&lt;/li&gt;
+&lt;li&gt;Modified pagination&lt;/li&gt;
+&lt;li&gt;Image placements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Pagination and image placement&lt;/h3&gt;
+&lt;p&gt;The pagination is presented with the current page and 3 neighboring pages on either side. &lt;/p&gt;
+&lt;p&gt;&amp;lt;&amp;lt;  &amp;lt;   7  8  9  &lt;strong&gt;10&lt;/strong&gt;  11  12  13  &amp;gt;  &amp;gt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;Images can be moved on page by adding the tag &lt;code&gt;#float-right&lt;/code&gt;, &lt;code&gt;#float-left&lt;/code&gt;, &lt;code&gt;#mid&lt;/code&gt; and &lt;code&gt;#full&lt;/code&gt; in your markdown.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  ![Title]({static}/images/my_image-600x400.png#float-right &amp;quot;&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Similarly, the placement can also be applied to html directly by wrapping images in a &lt;code&gt;&amp;lt;figure class="placement"&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;float-left&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;path-to/images/my_image-600x400.png&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.&lt;/p&gt;
+&lt;p&gt;You can leave feedback or say thanks &lt;a href="https://saythanks.io/to/aleylara"&gt;here &amp;#128077;&lt;/a&gt;&lt;/p&gt;</content><category term="theme"></category><category term="design"></category><category term="pelican"></category></entry><entry><title>Image placement</title><link href="https://aleylara.github.io/Peli-Kiera/image-placement.html" rel="alternate"></link><published>2018-11-15T00:00:00+11:00</published><updated>2018-11-15T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-15:/Peli-Kiera/image-placement.html</id><summary type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
+&lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;
+Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
+Quaeri sagittas Solis praedelassat aera pretium, a voces secundo tellus. Nomina
+aura redeamus postquam regno, scribit lacrimisque demisso pulcherrime fecerat.
+Turba amor utinam humo ruunt funera, Cythereiadasque soror non remige cam in
+visum origine avellere, hoste. Deceant posita iuncti, ingens, iniuria sub …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
+&lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;
+Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
+Quaeri sagittas Solis praedelassat aera pretium, a voces secundo tellus. Nomina
+aura redeamus postquam regno, scribit lacrimisque demisso pulcherrime fecerat.
+Turba amor utinam humo ruunt funera, Cythereiadasque soror non remige cam in
+visum origine avellere, hoste. Deceant posita iuncti, ingens, iniuria sub fer nostrae ausam Cenaeo
+os Byblis omnia. Nisi mutatas steterat addere. Interque tantae fama; imperio et
+expertus profugam perlucentes saepe, Pagasaea confinia, dum. &lt;em&gt;Ignes coma&lt;/em&gt;
+postes, septem, si Pindo, amor ut putes quaeritur, diu.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bene si incunabula saxo Peparethos et versa&lt;/li&gt;
+&lt;li&gt;Caeneus trahit&lt;/li&gt;
+&lt;li&gt;Viderat consilium aliquid abdit talia iam modo&lt;/li&gt;
+&lt;li&gt;Onerosior retro&lt;/li&gt;
+&lt;li&gt;Haerebat crinitas ara quocamque mersit eloquioque adeunt&lt;/li&gt;
+&lt;li&gt;Sistere Liriope&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Aetatis faticinasque incessere inexpugnabile quod furta mortalis&lt;/h2&gt;
+&lt;p&gt;Leto numerumque Perseus pectusque ad Troes siquidem ait ubi vulnera comas,
+ademptis septimus Orithyia ferarum. Neque labare rupe intus illic tela omnes
+sua; extrema resupina habenti miserere! Memorata colle, inventos ipsamque patent
+furialiaque totum peterem iuvenes murmure ordine detrahitur, vix.
+Nisi mutatas steterat addere. Interque tantae fama; imperio et
+expertus profugam perlucentes saepe, Pagasaea confinia, dum. &lt;em&gt;Ignes coma&lt;/em&gt;
+postes, septem, si Pindo, amor ut putes quaeritur, diu.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crinis pectore, si quo hoc debueram obstat Romani amnesque nato, virentibus
+abstulit: dixit fessusque tantaque temptat. Inveniebantur pedis munera sub
+pedibus annos exhortor sine lactisque a postquam de umeris; quam, humum. Est
+celerem in rogarem Ligurum te aurata timoris subiectaque
+&lt;a href="http://adhuceburnas.io/"&gt;tubae&lt;/a&gt; facundia deque; illa populis omnis squalidus
+sidere.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Float Image Left&lt;/h2&gt;
+&lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
+&lt;p&gt;&lt;img alt="image2" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-left" title="#float-left"&gt; Deceant posita iuncti, ingens cam, dum nam; iniuria sub fer nostrae ausam Cenaeo
+os Byblis omnia. Nisi mutatas steterat addere. Interque tantae fama; imperio et
+expertus profugam perlucentes saepe, Pagasaea confinia, dum. &lt;em&gt;Ignes coma&lt;/em&gt;
+postes, septem, si Pindo, amor ut putes quaeritur, diu.&lt;/p&gt;
+&lt;h2&gt;Actaeon margine aer carmen mala coronant&lt;/h2&gt;
+&lt;p&gt;Figuram tua nubibus colebat caro. Alcyone inpatiens in morte fractaque prosunt
+sortes, possem non et inde cam taurus avus fluctus tibi, sed animi. Tum lacerum
+illam &lt;strong&gt;Nycteliusque caelo&lt;/strong&gt; elisa nunc, caligine esset et alis terruerat
+&lt;a href="http://ab-insania.io/est-conplexa"&gt;quinque attrahit iungit&lt;/a&gt;. Quibus aurea
+meorum montis ait acceptas, vertitur; enim leti suspirat cuncta sentiet adiuvat.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Lassata quis lapis et tamen inmensos vibrataque&lt;/li&gt;
+&lt;li&gt;Dolor totoque mecam&lt;/li&gt;
+&lt;li&gt;Cam dignus&lt;/li&gt;
+&lt;li&gt;Niseia in choreas sceleratus&lt;/li&gt;
+&lt;li&gt;Vultus pennis at librato coeperat terrae&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Center Image&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="image3" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#mid" title="#mid"&gt;&lt;/p&gt;
+&lt;p&gt;In sit, ab tum everterit sentit sua semiferos veteres. Ventis et sepulto posse;
+tamen partim metuentior convertor dat ut Teucri color. Clamore vertuntur campus
+Aeolides formamque poscit taurorum &lt;em&gt;rapere&lt;/em&gt; nec vix saepibus capit alto succedat
+digitis Rhodosque. Furtiva vestibus, munera in &lt;strong&gt;hanc pendentiaque cadet&lt;/strong&gt;, sis,
+cras. Dumque ille loqui, est luctus lacriment nostri est adspicio fatis captivis, cam
+nullam capitis ut cunasque inquit? Tenditur et primum AI penitusque ad ranae
+excussit ossibus creatus: Bacche verto, litus veniam! Ille corpora instat nobis
+pars animum dant: vel equos et.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image3" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#full" title="#full"&gt;&lt;/p&gt;</content><category term="tools"></category><category term="data"></category><category term="jupyter"></category></entry><entry><title>Simple is better than complex</title><link href="https://aleylara.github.io/Peli-Kiera/simple-is-better-than-complex.html" rel="alternate"></link><published>2018-11-14T00:00:00+11:00</published><updated>2018-11-14T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-14:/Peli-Kiera/simple-is-better-than-complex.html</id><summary type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"&lt;strong&gt;This is a blockquote&lt;/strong&gt;. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## Simple …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"&lt;strong&gt;This is a blockquote&lt;/strong&gt;. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## Simple is better than complex&lt;/span&gt;
+
+&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&amp;quot;Gur Mra bs Clguba, ol Gvz Crgref&lt;/span&gt;
+&lt;span class="s2"&gt;Ornhgvshy vf orggre guna htyl.&lt;/span&gt;
+&lt;span class="s2"&gt;Rkcyvpvg vf orggre guna vzcyvpvg.&lt;/span&gt;
+&lt;span class="s2"&gt;Fvzcyr vf orggre guna pbzcyrk.&lt;/span&gt;
+&lt;span class="s2"&gt;Pbzcyrk vf orggre guna pbzcyvpngrq.&lt;/span&gt;
+&lt;span class="s2"&gt;Syng vf orggre guna arfgrq.&lt;/span&gt;
+&lt;span class="s2"&gt;Fcnefr vf orggre guna qrafr.&lt;/span&gt;
+&lt;span class="s2"&gt;Ernqnovyvgl pbhagf.&lt;/span&gt;
+&lt;span class="s2"&gt;Fcrpvny pnfrf nera&amp;#39;g fcrpvny rabhtu gb oernx gur ehyrf.&lt;/span&gt;
+&lt;span class="s2"&gt;Nygubhtu cenpgvpnyvgl orngf chevgl.&lt;/span&gt;
+&lt;span class="s2"&gt;Reebef fubhyq arire cnff fvyragyl.&lt;/span&gt;
+&lt;span class="s2"&gt;Hayrff rkcyvpvgyl fvyraprq.&lt;/span&gt;
+&lt;span class="s2"&gt;Va gur snpr bs nzovthvgl, ershfr gur grzcgngvba gb thrff.&lt;/span&gt;
+&lt;span class="s2"&gt;Gurer fubhyq or bar-- naq cersrenoyl bayl bar --boivbhf jnl gb qb vg.&lt;/span&gt;
+&lt;span class="s2"&gt;Nygubhtu gung jnl znl abg or boivbhf ng svefg hayrff lbh&amp;#39;er Qhgpu.&lt;/span&gt;
+&lt;span class="s2"&gt;Abj vf orggre guna arire.&lt;/span&gt;
+&lt;span class="s2"&gt;Nygubhtu arire vf bsgra orggre guna *evtug* abj.&lt;/span&gt;
+&lt;span class="s2"&gt;Vs gur vzcyrzragngvba vf uneq gb rkcynva, vg&amp;#39;f n onq vqrn.&lt;/span&gt;
+&lt;span class="s2"&gt;Vs gur vzcyrzragngvba vf rnfl gb rkcynva, vg znl or n tbbq vqrn.&lt;/span&gt;
+&lt;span class="s2"&gt;Anzrfcnprf ner bar ubaxvat terng vqrn -- yrg&amp;#39;f qb zber bs gubfr!&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;65&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;97&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;26&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;]))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Clguba tvirf lbh jvatf. Gel vg lbhefrys!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;antigravity&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;antigravity&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fly&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Gunaxf sbe fgbccvat ol!..&lt;/p&gt;</content><category term="python"></category><category term="jupyter"></category><category term="library"></category></entry><entry><title>Barba non facit philosophum</title><link href="https://aleylara.github.io/Peli-Kiera/barba-non-facit-philosophum.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/barba-non-facit-philosophum.html</id><summary type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
+Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
+ubi et cetera comites licet, ille &lt;strong&gt;quibus&lt;/strong&gt;. Habet luctu Peragit placidos qua
+formosior putatis cum fuerat illa alis Typhoea, hiscere. Aeacus et traxere
+&lt;a href="http://nantemque-mediis.com/etsed.html"&gt;nondum&lt;/a&gt;, his filia, celeri ministri
+sospes. Simul fas. &lt;strong&gt;Finxit&lt;/strong&gt; edam mora spirarunt passim claro Tantalus, ipsa
+herbis amat meo telluris pro, vero &lt;strong&gt;dea&lt;/strong&gt; adhuc.&lt;/p&gt;
+&lt;p&gt;Laedere domos ignes …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
+Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
+ubi et cetera comites licet, ille &lt;strong&gt;quibus&lt;/strong&gt;. Habet luctu Peragit placidos qua
+formosior putatis cum fuerat illa alis Typhoea, hiscere. Aeacus et traxere
+&lt;a href="http://nantemque-mediis.com/etsed.html"&gt;nondum&lt;/a&gt;, his filia, celeri ministri
+sospes. Simul fas. &lt;strong&gt;Finxit&lt;/strong&gt; edam mora spirarunt passim claro Tantalus, ipsa
+herbis amat meo telluris pro, vero &lt;strong&gt;dea&lt;/strong&gt; adhuc.&lt;/p&gt;
+&lt;p&gt;Laedere domos ignes, e est prosit, tantum radiabant nomina Minos. Celebrare
+Memnonides miluus rerum, est suis est redeuntibus &lt;strong&gt;Latias clementissimus&lt;/strong&gt;,
+suus vitasset multa. Non mille puerosque vultu!&lt;/p&gt;
+&lt;p&gt;Est &lt;strong&gt;adspicit&lt;/strong&gt;; dat meos occurret sedit, tempora suo vidit et siccaeque,
+capessamus. Inponit per magis moriuntur; &lt;strong&gt;opusque Baucida&lt;/strong&gt; servat. Dixerat
+Daedalus Pyramus dedit ima filia certe in distulit decimo filius et vestemque
+teste tecti. Nymphae quod! Et videt Tamasenum lustra fracta in spernit gradus
+hoc me recessit.&lt;/p&gt;
+&lt;p&gt;Semperque erat merui quia loca: herbae inter faenilibus dici. Et et abiit,
+inpulit senilibus pallam conplevit Tegeaea alienae: sceleris inpulsas, bibisset
+spoliat Stygiisque coeunt. &lt;em&gt;Exstinguere phoenica&lt;/em&gt;, suis foro, est agmen timuit
+Marte visa sanabilis vultumque opus auditurum dixit tamen, a. Ferendo aestu.
+Curibusque verba mitia; cetera qui labori, adspicit deque spoliantis haec
+inmunemque.&lt;/p&gt;
+&lt;h2&gt;In vino veritas&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="image2" src="images/camera-2008479_640.png#float-right" title="Pixabay"&gt;&lt;/p&gt;
+&lt;p&gt;Haec ea veluti fortissime debebat fugato caret, sed inertes. Quo cuspis fata fit
+tuae pulcherrima cornu vitae nutrix, &lt;em&gt;cruor sua torus&lt;/em&gt;, et flumina novena
+pennis, ius.&lt;/p&gt;
+&lt;p&gt;Plus iamque, laesum iuro, tuas tulit Seriphi evaserat parientibus mihi, nos
+viseret. Rapta vices reparabile Mater nymphas contractosque posse. Terruit et
+debebit! Si gremio conplerunt nomina nullum in &lt;em&gt;ambitae letalibus&lt;/em&gt; iubet, ore
+nato, geminos. Aere Ulixes neci.&lt;/p&gt;
+&lt;p&gt;Semperque erat merui quia loca: herbae inter faenilibus dici. Et et abiit,
+inpulit senilibus pallam conplevit Tegeaea alienae: sceleris inpulsas, bibisset
+spoliat Stygiisque coeunt. &lt;em&gt;Exstinguere phoenica&lt;/em&gt;, suis foro, est agmen timuit
+Marte visa sanabilis vultumque opus auditurum dixit tamen, a. Ferendo aestu.
+Curibusque verba mitia; cetera qui labori, adspicit deque spoliantis haec
+inmunemque.&lt;/p&gt;
+&lt;p&gt;Mens suam, potentibus servat Gorgoneum fecit; inde falcato putatis alta. Neque
+Melantho digitos peperisse lucis: responderat inque paelicis opis suadent!&lt;/p&gt;</content><category term="design"></category><category term="css"></category><category term="theme"></category></entry><entry><title>Dedignata obstitit super</title><link href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-super.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/dedignata-obstitit-super.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub
+Cleonae, &lt;em&gt;ne pater&lt;/em&gt; desuetudine ille; lammina petens pro annum.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dea agrestes&lt;/li&gt;
+&lt;li&gt;Fragor valet desierant&lt;/li&gt;
+&lt;li&gt;Quae et ferre tapetibus dabit mirantibus poscitur&lt;/li&gt;
+&lt;li&gt;Ducum moenia unde&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Est nova in quas comitata te aegre&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.trahunt-harena.net/"&gt;Est altera&lt;/a&gt; sequuntur ex Nereis reliquit
+tigridis; distinguunt latet, sine? Faciemque robora pinguia monedula ante
+cernunt ingratus oblita! Diu cauda ut squamigeris differt &lt;a href="http://fidissimecorpore.io/possesdum"&gt;meque et
+ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abdiderat imae cum&lt;/li&gt;
+&lt;li&gt;Ipse funere&lt;/li&gt;
+&lt;li&gt;Unda auras putes vectabantur tantaque misit&lt;/li&gt;
+&lt;li&gt;Volucrum cecidit sponte&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Table Header 1&lt;/th&gt;
+&lt;th&gt;Table Header 2&lt;/th&gt;
+&lt;th&gt;Table Header 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
+fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
+deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="data"></category><category term="productivity"></category><category term="python"></category></entry><entry><title>Volucrum cecidit sponte</title><link href="https://aleylara.github.io/Peli-Kiera/volucrum-cecidit-sponte.html" rel="alternate"></link><published>2018-06-06T00:00:00+10:00</published><updated>2018-06-06T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-06:/Peli-Kiera/volucrum-cecidit-sponte.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub
+Cleonae, &lt;em&gt;ne pater&lt;/em&gt; desuetudine ille; lammina petens pro annum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;List Types&lt;/h1&gt;
+&lt;h2&gt;Ordered List&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;ol&gt;
+&lt;li&gt;List Item 3.1&lt;/li&gt;
+&lt;li&gt;List Item 3.2&lt;ol&gt;
+&lt;li&gt;List Item 3.2.1&lt;/li&gt;
+&lt;li&gt;List Item 3.2 2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 3.3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Unordered List&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;li&gt;List Item 3.1&lt;ul&gt;
+&lt;li&gt;List Item 3.2&lt;ul&gt;
+&lt;li&gt;List Item 3.2.1&lt;/li&gt;
+&lt;li&gt;List Item 3.2 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 3.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Definition List&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Definition Term 1&lt;/dt&gt;
+&lt;dd&gt;Definition Description 1&lt;/dd&gt;
+&lt;dt&gt;Definition Term 2&lt;/dt&gt;
+&lt;dd&gt;Definition Description 2&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Dea agrestes&lt;/li&gt;
+&lt;li&gt;Fragor valet desierant&lt;/li&gt;
+&lt;li&gt;Quae et ferre tapetibus dabit mirantibus poscitur&lt;/li&gt;
+&lt;li&gt;Ducum moenia unde&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Est nova in quas comitata te aegre&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.trahunt-harena.net/"&gt;Est altera&lt;/a&gt; sequuntur ex Nereis reliquit
+tigridis; distinguunt latet, sine? Faciemque robora pinguia monedula ante
+cernunt ingratus oblita! Diu cauda ut squamigeris differt &lt;a href="http://fidissimecorpore.io/possesdum"&gt;meque et
+ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abdiderat imae cum&lt;/li&gt;
+&lt;li&gt;Ipse funere&lt;/li&gt;
+&lt;li&gt;Unda auras putes vectabantur tantaque misit&lt;/li&gt;
+&lt;li&gt;Volucrum cecidit sponte&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
+fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
+deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Quae bracchia occidit amplectitur</title><link href="https://aleylara.github.io/Peli-Kiera/quae-bracchia-occidit-amplectitur.html" rel="alternate"></link><published>2018-06-05T00:00:00+10:00</published><updated>2018-06-05T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-05:/Peli-Kiera/quae-bracchia-occidit-amplectitur.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub
+Cleonae, &lt;em&gt;ne pater&lt;/em&gt; desuetudine ille; lammina petens pro annum.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dea agrestes&lt;/li&gt;
+&lt;li&gt;Fragor valet desierant&lt;/li&gt;
+&lt;li&gt;Quae et ferre tapetibus dabit mirantibus poscitur&lt;/li&gt;
+&lt;li&gt;Ducum moenia unde&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Est nova in quas comitata te aegre&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.trahunt-harena.net/"&gt;Est altera&lt;/a&gt; sequuntur ex Nereis reliquit
+tigridis; distinguunt latet, sine? Faciemque robora pinguia monedula ante
+cernunt ingratus oblita! Diu cauda ut squamigeris differt &lt;a href="http://fidissimecorpore.io/possesdum"&gt;meque et
+ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abdiderat imae&lt;/li&gt;
+&lt;li&gt;Ipse funere&lt;/li&gt;
+&lt;li&gt;Unda auras putes vectabantur tantaque misit&lt;/li&gt;
+&lt;li&gt;Volucrum cecidit sponte&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
+fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
+deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;
+&lt;h1&gt;Text Elements&lt;/h1&gt;
+&lt;p&gt;The &lt;a href="#"&gt;a element&lt;/a&gt; and &lt;a href="https://example.com"&gt;external a element&lt;/a&gt; examples&lt;/p&gt;
+&lt;p&gt;The &lt;abbr&gt;abbr element&lt;/abbr&gt; and an &lt;abbr title="Abbreviation"&gt;abbr&lt;/abbr&gt; element with title examples&lt;/p&gt;
+&lt;p&gt;The &lt;acronym title="A Cowboy Ran One New York Marathon"&gt;ACRONYM&lt;/acronym&gt; element example&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;b element&lt;/strong&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;cite&gt;cite element&lt;/cite&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;code element&lt;/code&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;data value="3967381398"&gt;data element&lt;/data&gt; example&lt;/p&gt;
+&lt;p&gt;The ~~del element~~ example&lt;/p&gt;
+&lt;p&gt;The &lt;dfn&gt;dfn element&lt;/dfn&gt; and &lt;dfn title="Title text"&gt;dfn element with title&lt;/dfn&gt; examples&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;em element&lt;/em&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;i element&lt;/em&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;ins&gt;ins element&lt;/ins&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;kbd&gt;kbd element&lt;/kbd&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;mark&gt;mark element&lt;/mark&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;q&gt;q element&lt;/q&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;q&gt;q element &lt;q&gt;inside&lt;/q&gt; a q element&lt;/q&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;s&gt;s element&lt;/s&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;samp&gt;samp element&lt;/samp&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;small&gt;small element&lt;/small&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;span&gt;span element&lt;/span&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;strong element&lt;/strong&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;sub&gt;sub element&lt;/sub&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;sup&gt;sup element&lt;/sup&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;time datetime="2005-05-15 19:00"&gt;time element&lt;/time&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;u&gt;u element&lt;/u&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;var&gt;var element&lt;/var&gt; example&lt;/p&gt;
+&lt;hr&gt;</content><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Dedignata obstitit surrexit super</title><link href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-surrexit-super.html" rel="alternate"></link><published>2018-06-04T00:00:00+10:00</published><updated>2018-06-04T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-04:/Peli-Kiera/dedignata-obstitit-surrexit-super.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub
+Cleonae, &lt;em&gt;ne pater&lt;/em&gt; desuetudine ille; lammina petens pro annum.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dea agrestes&lt;/li&gt;
+&lt;li&gt;Fragor valet desierant&lt;/li&gt;
+&lt;li&gt;Quae et ferre tapetibus dabit mirantibus poscitur&lt;/li&gt;
+&lt;li&gt;Ducum moenia unde&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Est nova in quas comitata te aegre&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.trahunt-harena.net/"&gt;Est altera&lt;/a&gt; sequuntur ex Nereis reliquit
+tigridis; distinguunt latet, sine? Faciemque robora pinguia monedula ante
+cernunt ingratus oblita! Diu cauda ut squamigeris differt &lt;a href="http://fidissimecorpore.io/possesdum"&gt;meque et
+ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abdiderat imae cum&lt;/li&gt;
+&lt;li&gt;Ipse funere&lt;/li&gt;
+&lt;li&gt;Unda auras putes vectabantur tantaque misit&lt;/li&gt;
+&lt;li&gt;Volucrum cecidit sponte&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
+fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
+deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Quae et ferre tapetibus dabit mirantibus poscitur</title><link href="https://aleylara.github.io/Peli-Kiera/quae-et-ferre-tapetibus-dabit-mirantibus-poscitur.html" rel="alternate"></link><published>2018-06-03T00:00:00+10:00</published><updated>2018-06-03T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-03:/Peli-Kiera/quae-et-ferre-tapetibus-dabit-mirantibus-poscitur.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub
+Cleonae, &lt;em&gt;ne pater&lt;/em&gt; desuetudine ille; lammina petens pro annum.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dea agrestes&lt;/li&gt;
+&lt;li&gt;Fragor valet desierant&lt;/li&gt;
+&lt;li&gt;Quae et ferre tapetibus dabit mirantibus poscitur&lt;/li&gt;
+&lt;li&gt;Ducum moenia unde&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Est nova in quas comitata te aegre&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.trahunt-harena.net/"&gt;Est altera&lt;/a&gt; sequuntur ex Nereis reliquit
+tigridis; distinguunt latet, sine? Faciemque robora pinguia monedula ante
+cernunt ingratus oblita! Diu cauda ut squamigeris differt &lt;a href="http://fidissimecorpore.io/possesdum"&gt;meque et
+ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abdiderat imae cum&lt;/li&gt;
+&lt;li&gt;Ipse funere&lt;/li&gt;
+&lt;li&gt;Unda auras putes vectabantur tantaque misit&lt;/li&gt;
+&lt;li&gt;Volucrum cecidit sponte&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
+fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
+deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Eque porro quisquam est</title><link href="https://aleylara.github.io/Peli-Kiera/eque-porro-quisquam-est.html" rel="alternate"></link><published>2018-06-02T00:00:00+10:00</published><updated>2018-06-02T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-02:/Peli-Kiera/eque-porro-quisquam-est.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
+oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
+olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
+&lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
+insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub
+Cleonae, &lt;em&gt;ne pater&lt;/em&gt; desuetudine ille; lammina petens pro annum.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dea agrestes&lt;/li&gt;
+&lt;li&gt;Fragor valet desierant&lt;/li&gt;
+&lt;li&gt;Quae et ferre tapetibus dabit mirantibus poscitur&lt;/li&gt;
+&lt;li&gt;Ducum moenia unde&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Est nova in quas comitata te aegre&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.trahunt-harena.net/"&gt;Est altera&lt;/a&gt; sequuntur ex Nereis reliquit
+tigridis; distinguunt latet, sine? Faciemque robora pinguia monedula ante
+cernunt ingratus oblita! Diu cauda ut squamigeris differt &lt;a href="http://fidissimecorpore.io/possesdum"&gt;meque et
+ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abdiderat imae cum&lt;/li&gt;
+&lt;li&gt;Ipse funere&lt;/li&gt;
+&lt;li&gt;Unda auras putes vectabantur tantaque misit&lt;/li&gt;
+&lt;li&gt;Volucrum cecidit sponte&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
+fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
+deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;
+&lt;h2&gt;Blockquote&lt;/h2&gt;
+&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"&lt;strong&gt;This is a blockquote&lt;/strong&gt;. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: the &lt;a href="http://html5doctor.com/the-figure-figcaption-elements/"&gt;Figure-Figcaption&lt;/a&gt; and &lt;a href="http://html5doctor.com/the-details-and-summary-elements/"&gt;Details-Summary&lt;/a&gt; elements are not currently supported in markdown.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;</content><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>de Finibus Bonorum Malorum</title><link href="https://aleylara.github.io/Peli-Kiera/de-finibus-bonorum-malorum.html" rel="alternate"></link><published>2017-10-26T00:00:00+11:00</published><updated>2017-10-26T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-26:/Peli-Kiera/de-finibus-bonorum-malorum.html</id><summary type="html">&lt;h3&gt;Eque porro quisquam est&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+cupidatat …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Eque porro quisquam est&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;voluptatem quia voluptas
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
+veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
+autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
+eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>At vero eos et accusamus et iusto</title><link href="https://aleylara.github.io/Peli-Kiera/at-vero-eos-et-accusamus-et-iusto.html" rel="alternate"></link><published>2017-10-16T00:00:00+11:00</published><updated>2017-10-16T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-16:/Peli-Kiera/at-vero-eos-et-accusamus-et-iusto.html</id><summary type="html">&lt;h3&gt;Quae bracchia occidit amplectitur procul&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Quae bracchia occidit amplectitur procul&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</content><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Quis autem vel eum iure reprehenderit</title><link href="https://aleylara.github.io/Peli-Kiera/quis-autem-vel-eum-iure-reprehenderit.html" rel="alternate"></link><published>2017-10-06T00:00:00+11:00</published><updated>2017-10-06T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-06:/Peli-Kiera/quis-autem-vel-eum-iure-reprehenderit.html</id><summary type="html">&lt;h3&gt;Sed ut perspiciatis unde omnis&lt;/h3&gt;
+&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+voluptatem sequi nesciunt. Neque …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Sed ut perspiciatis unde omnis&lt;/h3&gt;
+&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
+veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
+autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
+eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Der gemach Kokolores</title><link href="https://aleylara.github.io/Peli-Kiera/der-gemach-kokolores.html" rel="alternate"></link><published>2017-09-29T00:00:00+10:00</published><updated>2017-09-29T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-09-29:/Peli-Kiera/der-gemach-kokolores.html</id><summary type="html">&lt;h3&gt;Nemo enim ipsam&lt;/h3&gt;
+&lt;p&gt;voluptatem quia voluptas
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+voluptatem sequi nesciunt …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Nemo enim ipsam&lt;/h3&gt;
+&lt;p&gt;voluptatem quia voluptas
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
+veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
+autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
+eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="tools"></category><category term="productivity"></category><category term="data"></category></entry></feed>
