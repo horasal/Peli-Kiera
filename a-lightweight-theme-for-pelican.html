@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <meta charset="utf-8"/>
+        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Peli-Kiera - A lightweight theme for Pelican</title>
@@ -14,9 +14,9 @@
 feeds/all.atom.xml"
                   type="application/atom+xml" rel="alternate" title="Peli-Kiera Atom Feed"/>
 
-        <meta name="tags" content="theme"/>
-        <meta name="tags" content="design"/>
-        <meta name="tags" content="pelican"/>
+<meta name="tags" content="theme" />
+<meta name="tags" content="design" />
+<meta name="tags" content="pelican" />
 </head>
 <body>
 <a href="https://github.com/aleylara/Peli-Kiera" class="github-corner" aria-label="View source on GitHub">
@@ -75,30 +75,29 @@ feeds/all.atom.xml"
                     </li>
         </ul>
     </nav>
-    <main>
-        <article>
-            <h2>A lightweight theme for Pelican</h2>
-            
-            <aside>
-                <ul>
-                    <li>
-                        <time datetime="2018-11-16 00:00:00+11:00">Nov 16, 2018</time>
-                    </li>
-                    </li>
-                        <li>2 min read</li>
-                        <li>
-                        Categories:
-                        <a href="https://aleylara.github.io/Peli-Kiera/category/posts.html"><em>Posts</em></a>
-                    </li>
-                        <li>
-                        Tags:
-                            <a href="https://aleylara.github.io/Peli-Kiera/tag/theme.html"><em>#theme</em></a>
-                            <a href="https://aleylara.github.io/Peli-Kiera/tag/design.html"><em>#design</em></a>
-                            <a href="https://aleylara.github.io/Peli-Kiera/tag/pelican.html"><em>#pelican</em></a>
-                    </li>
-                </ul>
-            </aside>
-            <p>Peli-Kiera is a theme for the Pelican static site generator.
+<main>
+    <article>
+        <h2>A lightweight theme for Pelican</h2>
+        
+        <aside>
+            <ul>
+                <li>
+                    <time datetime="2018-11-16 00:00:00+11:00">Nov 16, 2018</time>
+                </li>
+                <li>2 min read</li>
+                <li>
+                    Categories:
+                    <a href="https://aleylara.github.io/Peli-Kiera/category/posts.html"><em>Posts</em></a>
+                </li>
+                <li>
+                    Tags:
+                    <a href="https://aleylara.github.io/Peli-Kiera/tag/theme.html"><em>#theme</em></a>
+                    <a href="https://aleylara.github.io/Peli-Kiera/tag/design.html"><em>#design</em></a>
+                    <a href="https://aleylara.github.io/Peli-Kiera/tag/pelican.html"><em>#pelican</em></a>
+                </li>
+            </ul>
+        </aside>
+        <p>Peli-Kiera is a theme for the Pelican static site generator.
 Thanks to the <a href="https://github.com/avianto/hugo-kiera">Hugo-Kiera</a> project for the inspiration.</p>
 <h3>Installation</h3>
 <p>The theme can be installed by cloning the repo into your 
@@ -142,11 +141,11 @@ git clone https://github.com/aleylara/Peli-Kiera
 
 <span class="c1"># Feed generation is usually not desired when developing</span>
 <span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/all.atom.xml&#39;</span>
-<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="bp">None</span>
-<span class="n">TRANSLATION_FEED_ATOM</span> <span class="o">=</span> <span class="bp">None</span>
-<span class="n">AUTHOR_FEED_ATOM</span> <span class="o">=</span> <span class="bp">None</span>
-<span class="n">AUTHOR_FEED_RSS</span> <span class="o">=</span> <span class="bp">None</span>
-<span class="n">RSS_FEED_SUMMARY_ONLY</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">TRANSLATION_FEED_ATOM</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">AUTHOR_FEED_ATOM</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">AUTHOR_FEED_RSS</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">RSS_FEED_SUMMARY_ONLY</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="c1"># Social widget</span>
 <span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">(</span>
@@ -180,7 +179,7 @@ git clone https://github.com/aleylara/Peli-Kiera
 <p>The pagination is presented with the current page and 3 neighboring pages on either side. </p>
 <p>&lt;&lt;  &lt;   7  8  9  <strong>10</strong>  11  12  13  &gt;  &gt;&gt;</p>
 <p>Images can be moved on page by adding the tag <code>#float-right</code>, <code>#float-left</code>, <code>#mid</code> and <code>#full</code> in your markdown.</p>
-<div class="highlight"><pre><span></span>  ![Title]({static}/images/my_image-600x400.png#float-right &quot;&quot;)
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="err">!</span><span class="o">[</span><span class="n">Title</span><span class="o">]</span><span class="p">(</span><span class="err">{</span><span class="k">static</span><span class="err">}</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">my_image</span><span class="o">-</span><span class="mi">600</span><span class="n">x400</span><span class="p">.</span><span class="n">png#float</span><span class="o">-</span><span class="nf">right</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 
 
@@ -193,19 +192,21 @@ git clone https://github.com/aleylara/Peli-Kiera
 
 <p>Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.</p>
 <p>You can leave feedback or say thanks <a href="https://saythanks.io/to/aleylara">here &#128077;</a></p>
-        </article>
-        <section class="post-nav">
-            <ul>
-                    <li>
-                        <a href="https://aleylara.github.io/Peli-Kiera/"> </a>
-                    </li>
-                    <li>
-                        <a href="https://aleylara.github.io/Peli-Kiera/image-placement.html">Image placement <i
-                                class="fa fa-chevron-circle-right"></i></a>
-                    </li>
-            </ul>
-        </section>
-        <div>
+    </article>
+    <section class="post-nav">
+        <div id="left-page">
+            <div id="left-link">
+                <a href="https://aleylara.github.io/Peli-Kiera/"> </a>
+            </div>
+        </div>
+        <div id="right-page">
+            <div id="right-link">
+                <a href="https://aleylara.github.io/Peli-Kiera/image-placement.html">Image placement </a>
+                <div id="right-arrow"><i class="fa fa-chevron-circle-right"></i></div>
+            </div>
+        </div>
+    </section>
+    <div>
     <div class="comments">
         <h2>Comments !</h2>
         <div id="disqus_thread"></div>
@@ -227,8 +228,8 @@ git clone https://github.com/aleylara/Peli-Kiera
             powered by
             Disqus.</a></noscript>
     </div>
-        </div>
-    </main>
+    </div>
+</main>
     <footer>
         <h6>
             Copyright &copy 2018
