@@ -102,24 +102,24 @@ Thanks to the <a href="https://github.com/avianto/hugo-kiera">Hugo-Kiera</a> pro
 <h3>Installation</h3>
 <p>The theme can be installed by cloning the repo into your 
 themes path and pointing to it in your <code>pelicanconf.py</code>.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Create a themes directory if it doesn&#39;t exists</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Create a themes directory if it doesn&#39;t exists</span>
 <span class="nb">cd</span> project-dir/themes
 git clone https://github.com/aleylara/Peli-Kiera
 
 <span class="c1"># Path to your theme directory in pelicanconf.py</span>
 <span class="nv">THEME</span> <span class="o">=</span> <span class="s1">&#39;themes/Peli-Kiera&#39;</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>In order to get read times and links between articles, the theme requires <a href="https://github.com/getpelican/pelican-plugins/tree/master/readtime">pelican-readtime</a> and <a href="https://github.com/getpelican/pelican-plugins/tree/master/neighbors">neighbors</a> plugins.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Path to your plugins directory in pelicanconf.py</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Path to your plugins directory in pelicanconf.py</span>
 <span class="nv">PLUGIN_PATHS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;pelican-plugins&#39;</span><span class="o">]</span>
 <span class="nv">PLUGINS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;readtime&#39;</span>, <span class="s1">&#39;neighbors&#39;</span><span class="o">]</span>
-</pre></div>
+</code></pre></div>
 
 
 <h3>Settings</h3>
-<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*- #</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
 
@@ -162,7 +162,7 @@ git clone https://github.com/aleylara/Peli-Kiera
 
 <span class="c1"># Uncomment following line if you want document-relative URLs when developing</span>
 <span class="c1"># RELATIVE_URLS = True</span>
-</pre></div>
+</code></pre></div>
 
 
 <h3>Features</h3>
@@ -179,19 +179,18 @@ git clone https://github.com/aleylara/Peli-Kiera
 <p>The pagination is presented with the current page and 3 neighboring pages on either side. </p>
 <p>&lt;&lt;  &lt;   7  8  9  <strong>10</strong>  11  12  13  &gt;  &gt;&gt;</p>
 <p>Images can be moved on page by adding the tag <code>#float-right</code>, <code>#float-left</code>, <code>#mid</code> and <code>#full</code> in your markdown.</p>
-<div class="highlight"><pre><span></span><span class="w">  </span><span class="err">!</span><span class="o">[</span><span class="n">Title</span><span class="o">]</span><span class="p">(</span><span class="err">{</span><span class="k">static</span><span class="err">}</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">my_image</span><span class="o">-</span><span class="mi">600</span><span class="n">x400</span><span class="p">.</span><span class="n">png#float</span><span class="o">-</span><span class="nf">right</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">)</span><span class="w"></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>  !<span class="o">[</span>Title<span class="o">]({</span>static<span class="o">}</span>/images/my_image-600x400.png#float-right <span class="s2">&quot;&quot;</span><span class="o">)</span>
+</code></pre></div>
 
 
 <p>Similarly, the placement can also be applied to html directly by wrapping images in a <code>&lt;figure class="placement"&gt;</code> tag.</p>
-<div class="highlight"><pre><span></span>  <span class="p">&lt;</span><span class="nt">figure</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;float-left&quot;</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">figure</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;float-left&quot;</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path-to/images/my_image-600x400.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.</p>
-<p>You can leave feedback or say thanks <a href="https://saythanks.io/to/aleylara">here &#128077;</a></p>
     </article>
     <section class="post-nav">
         <div id="left-page">
@@ -244,7 +243,7 @@ git clone https://github.com/aleylara/Peli-Kiera
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-121671635-3', 'auto');
+    ga('create', 'UA-130049185-1', 'auto');
     ga('send', 'pageview');
     </script>
 </body>

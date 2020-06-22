@@ -4,33 +4,33 @@ Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&l
 &lt;h3&gt;Installation&lt;/h3&gt;
 &lt;p&gt;The theme can be installed by cloning the repo into your 
 themes path and pointing to it in your &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
 &lt;span class="nb"&gt;cd&lt;/span&gt; project-dir/themes
 git clone https://github.com/aleylara/Peli-Kiera
 
-&lt;span class="c1"&gt;# Path …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
+&lt;span class="c1"&gt;# Path …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
 Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&lt;/a&gt; project for the inspiration.&lt;/p&gt;
 &lt;h3&gt;Installation&lt;/h3&gt;
 &lt;p&gt;The theme can be installed by cloning the repo into your 
 themes path and pointing to it in your &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
 &lt;span class="nb"&gt;cd&lt;/span&gt; project-dir/themes
 git clone https://github.com/aleylara/Peli-Kiera
 
 &lt;span class="c1"&gt;# Path to your theme directory in pelicanconf.py&lt;/span&gt;
 &lt;span class="nv"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;themes/Peli-Kiera&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;In order to get read times and links between articles, the theme requires &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/readtime"&gt;pelican-readtime&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/neighbors"&gt;neighbors&lt;/a&gt; plugins.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Path to your plugins directory in pelicanconf.py&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Path to your plugins directory in pelicanconf.py&lt;/span&gt;
 &lt;span class="nv"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &lt;span class="nv"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;readtime&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;neighbors&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;Settings&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
 &lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
 
@@ -73,7 +73,7 @@ git clone https://github.com/aleylara/Peli-Kiera
 
 &lt;span class="c1"&gt;# Uncomment following line if you want document-relative URLs when developing&lt;/span&gt;
 &lt;span class="c1"&gt;# RELATIVE_URLS = True&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;Features&lt;/h3&gt;
@@ -90,19 +90,18 @@ git clone https://github.com/aleylara/Peli-Kiera
 &lt;p&gt;The pagination is presented with the current page and 3 neighboring pages on either side. &lt;/p&gt;
 &lt;p&gt;&amp;lt;&amp;lt;  &amp;lt;   7  8  9  &lt;strong&gt;10&lt;/strong&gt;  11  12  13  &amp;gt;  &amp;gt;&amp;gt;&lt;/p&gt;
 &lt;p&gt;Images can be moved on page by adding the tag &lt;code&gt;#float-right&lt;/code&gt;, &lt;code&gt;#float-left&lt;/code&gt;, &lt;code&gt;#mid&lt;/code&gt; and &lt;code&gt;#full&lt;/code&gt; in your markdown.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;!&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="k"&gt;static&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;images&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;my_image&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;600&lt;/span&gt;&lt;span class="n"&gt;x400&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;png#float&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nf"&gt;right&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  !&lt;span class="o"&gt;[&lt;/span&gt;Title&lt;span class="o"&gt;]({&lt;/span&gt;static&lt;span class="o"&gt;}&lt;/span&gt;/images/my_image-600x400.png#float-right &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Similarly, the placement can also be applied to html directly by wrapping images in a &lt;code&gt;&amp;lt;figure class="placement"&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;float-left&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;float-left&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
       &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;path-to/images/my_image-600x400.png&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
   &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.&lt;/p&gt;
-&lt;p&gt;You can leave feedback or say thanks &lt;a href="https://saythanks.io/to/aleylara"&gt;here &amp;#128077;&lt;/a&gt;&lt;/p&gt;</content><category term="Posts"></category><category term="theme"></category><category term="design"></category><category term="pelican"></category></entry><entry><title>Image placement</title><link href="https://aleylara.github.io/Peli-Kiera/image-placement.html" rel="alternate"></link><published>2018-11-15T00:00:00+11:00</published><updated>2018-11-15T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-15:/Peli-Kiera/image-placement.html</id><summary type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
+&lt;p&gt;Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.&lt;/p&gt;</content><category term="Posts"></category><category term="theme"></category><category term="design"></category><category term="pelican"></category></entry><entry><title>Image placement</title><link href="https://aleylara.github.io/Peli-Kiera/image-placement.html" rel="alternate"></link><published>2018-11-15T00:00:00+11:00</published><updated>2018-11-15T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-15:/Peli-Kiera/image-placement.html</id><summary type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
 &lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
 &lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;
 Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
@@ -178,12 +177,12 @@ pars animum dant: vel equos et.&lt;/p&gt;
 &lt;p&gt;"&lt;strong&gt;This is a blockquote&lt;/strong&gt;. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## Simple …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;## Simple …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;"&lt;strong&gt;This is a blockquote&lt;/strong&gt;. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;## Simple is better than complex&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;## Simple is better than complex&lt;/span&gt;
 
 &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&amp;quot;Gur Mra bs Clguba, ol Gvz Crgref&lt;/span&gt;
 &lt;span class="s2"&gt;Ornhgvshy vf orggre guna htyl.&lt;/span&gt;
@@ -212,18 +211,18 @@ pars animum dant: vel equos et.&lt;/p&gt;
         &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;26&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;]))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Clguba tvirf lbh jvatf. Gel vg lbhefrys!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;antigravity&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;antigravity&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;antigravity&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fly&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Gunaxf sbe fgbccvat ol!..&lt;/p&gt;</content><category term="Posts"></category><category term="python"></category><category term="jupyter"></category><category term="library"></category></entry><entry><title>Barba non facit philosophum</title><link href="https://aleylara.github.io/Peli-Kiera/barba-non-facit-philosophum.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/barba-non-facit-philosophum.html</id><summary type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
