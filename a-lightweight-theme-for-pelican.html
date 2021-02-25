@@ -69,7 +69,8 @@ feeds/all.atom.xml"
     </header>
     <nav>
         <ul>
-                    <li><a                         class="active" href="https://aleylara.github.io/Peli-Kiera/category/posts.html"> Posts </a></li>
+                    <li><a                         class="active" href="https://aleylara.github.io/Peli-Kiera/category/blog-posts.html"> Blog Posts </a></li>
+                    <li><a href="https://aleylara.github.io/Peli-Kiera/category/research.html"> Research </a></li>
                     <li><a href="https://aleylara.github.io/Peli-Kiera/pages/about-pelican.html">About Pelican</a>
                     </li>
         </ul>
@@ -83,10 +84,10 @@ feeds/all.atom.xml"
                 <li>
                     <time datetime="2018-11-16 00:00:00+11:00">Nov 16, 2018</time>
                 </li>
-                <li>2 min read</li>
+                <li>3 min read</li>
                 <li>
                     Categories:
-                    <a href="https://aleylara.github.io/Peli-Kiera/category/posts.html"><em>Posts</em></a>
+                    <a href="https://aleylara.github.io/Peli-Kiera/category/blog-posts.html"><em>Blog Posts</em></a>
                 </li>
                 <li>
                     Tags:
@@ -96,26 +97,94 @@ feeds/all.atom.xml"
                 </li>
             </ul>
         </aside>
-        <p>Peli-Kiera is a theme for the Pelican static site generator.
+        <h1>Peli-Kiera</h1>
+<p>Peli-Kiera is a theme for the Pelican static site generator.
 Thanks to the <a href="https://github.com/avianto/hugo-kiera">Hugo-Kiera</a> project for the inspiration.</p>
+<h3>Demo</h3>
+<p>Live-Demo at <a href="https://aleylara.github.io/Peli-Kiera">https://aleylara.github.io/Peli-Kiera</a></p>
 <h3>Installation</h3>
-<p>The theme can be installed by cloning the repo into your 
+<p><a href="https://docs.getpelican.com/en/stable/">Pelican-Docs</a> will guide you through the initial installation.
+Once inside the project directory, Peli-Kiera theme can be installed by cloning the repo into your 
 themes path and pointing to it in your <code>pelicanconf.py</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Create a themes directory if it doesn&#39;t exists</span>
-<span class="nb">cd</span> project-dir/themes
+<span class="nb">cd</span> project-dir
+pelican-quickstart
+mkdir themes
+<span class="nb">cd</span> themes
 git clone https://github.com/aleylara/Peli-Kiera
 
-<span class="c1"># Path to your theme directory in pelicanconf.py</span>
+<span class="c1"># Add path to your theme directory in pelicanconf.py</span>
 <span class="nv">THEME</span> <span class="o">=</span> <span class="s1">&#39;themes/Peli-Kiera&#39;</span>
 </code></pre></div>
 
 <p>In order to get read times and links between articles, the theme requires <a href="https://github.com/getpelican/pelican-plugins/tree/master/readtime">pelican-readtime</a> and <a href="https://github.com/getpelican/pelican-plugins/tree/master/neighbors">neighbors</a> plugins.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Path to your plugins directory in pelicanconf.py</span>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> project-dir/
+<span class="c1"># Please note the plugins repo is quite large and you only need the two.</span>
+git clone https://github.com/getpelican/pelican-plugins
+
+<span class="c1"># Add path to your plugins directory in pelicanconf.py</span>
 <span class="nv">PLUGIN_PATHS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;pelican-plugins&#39;</span><span class="o">]</span>
 <span class="nv">PLUGINS</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;readtime&#39;</span>, <span class="s1">&#39;neighbors&#39;</span><span class="o">]</span>
 </code></pre></div>
 
+<p>A sample article header.</p>
+<div class="highlight"><pre><span></span><code>Title: Simple is better than complex 
+Date: 2018-11-14
+Tags: python, jupyter, library
+Description: 
+Category: 
+
+### Introduction
+
+This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</code></pre></div>
+
+<p>Go ahead and create few articles in respective directories.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Generate articles and populate output</span>
+pelican content -o output -s pelicanconf.py
+<span class="c1"># start the local server on http://localhost:8000/</span>
+pelican --autoreload --listen
+</code></pre></div>
+
+<p>Final project directory structure should look similiar to this.</p>
+<div class="highlight"><pre><span></span><code><span class="o">(</span>Pelican<span class="o">)</span> ➜ project-dir tree
+│                                  
+├── Makefile
+├── content/
+│   ├── Blog Posts/
+│   │   ├── article-one.md
+│   │   ├── article-two.md
+│   │   └── article-three.md   
+│   ├── Research/
+│   │   ├── article-one.md
+│   │   ├── article-two.md
+│   │   └── article-three.md
+│   ├── images/
+│   │   ├── camera-2008479_640.png
+│   │   ├── camera-wide.png
+│   │   └── wide-wide.png
+│   └── pages/
+│       └── about.md
+├── output/ 
+│ 
+├── pelicanconf.py
+├── pelican-plugins/
+│   ├── neighbors
+│   │   ├── Readme.rst
+│   │   ├── __init__.py
+│   │   └── neighbors.py
+│   └── readtime
+│       ├── README.md
+│       ├── __init__.py
+│       └── readtime.py     
+├── publishconf.py
+├── tasks.py
+└── themes
+    └── Peli-Kiera/
+</code></pre></div>
+
 <h3>Settings</h3>
+<p>Example <code>pelicanconf.py</code></p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*- #</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
@@ -123,17 +192,18 @@ git clone https://github.com/aleylara/Peli-Kiera
 <span class="n">AUTHOR</span> <span class="o">=</span> <span class="s1">&#39;Author&#39;</span>
 <span class="n">COPYRIGHT</span> <span class="o">=</span> <span class="s1">&#39;2019&#39;</span>
 <span class="n">SITENAME</span> <span class="o">=</span> <span class="s1">&#39;Site-Name&#39;</span>
-<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="n">SITESUBTITLE</span> <span class="o">=</span> <span class="n">Site</span> <span class="n">Subtitle</span><span class="s1">&#39;</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;https://my-pelican-blog-address.io&#39;</span>
+<span class="n">SITESUBTITLE</span> <span class="o">=</span> <span class="s1">&#39;Site Subtitle&#39;</span>
 <span class="n">PATH</span> <span class="o">=</span> <span class="s1">&#39;content&#39;</span>
 <span class="n">TIMEZONE</span> <span class="o">=</span> <span class="s1">&#39;America/New_York&#39;</span>
 <span class="n">DEFAULT_LANG</span> <span class="o">=</span> <span class="s1">&#39;en&#39;</span>
 
 <span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;themes/Peli-Kiera&#39;</span>
-<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;plugins&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pelican-plugins&#39;</span><span class="p">]</span>
 <span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;readtime&#39;</span><span class="p">,</span> <span class="s1">&#39;neighbors&#39;</span><span class="p">]</span>
 <span class="n">STATIC_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;images&#39;</span><span class="p">]</span>
-<span class="n">SUMMARY_MAX_LENGTH</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="c1"># Article summary length on main index page</span>
+<span class="n">SUMMARY_MAX_LENGTH</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">DEFAULT_PAGINATION</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">GITHUB_URL</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/&#39;</span>
 
@@ -176,13 +246,13 @@ git clone https://github.com/aleylara/Peli-Kiera
 <p>The pagination is presented with the current page and 3 neighboring pages on either side. </p>
 <p>&lt;&lt;  &lt;   7  8  9  <strong>10</strong>  11  12  13  &gt;  &gt;&gt;</p>
 <p>Images can be moved on page by adding the tag <code>#float-right</code>, <code>#float-left</code>, <code>#mid</code> and <code>#full</code> in your markdown.</p>
-<div class="highlight"><pre><span></span><code>  !<span class="o">[</span>Title<span class="o">]({</span>static<span class="o">}</span>/images/my_image-600x400.png#float-right <span class="s2">&quot;&quot;</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code>!<span class="o">[</span>Title<span class="o">]({</span>static<span class="o">}</span>/images/my_image-600x400.png#float-right <span class="s2">&quot;&quot;</span><span class="o">)</span>
 </code></pre></div>
 
 <p>Similarly, the placement can also be applied to html directly by wrapping images in a <code>&lt;figure class="placement"&gt;</code> tag.</p>
-<div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">figure</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;float-left&quot;</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path-to/images/my_image-600x400.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">figure</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;float-left&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path-to/images/my_image-600x400.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
 </code></pre></div>
 
 <p>Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.</p>

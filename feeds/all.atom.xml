@@ -1,33 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Peli-Kiera</title><link href="https://aleylara.github.io/Peli-Kiera/" rel="alternate"></link><link href="https://aleylara.github.io/Peli-Kiera/feeds/all.atom.xml" rel="self"></link><id>https://aleylara.github.io/Peli-Kiera/</id><updated>2018-11-16T00:00:00+11:00</updated><subtitle>A Pelican theme for creative writing</subtitle><entry><title>A lightweight theme for Pelican</title><link href="https://aleylara.github.io/Peli-Kiera/a-lightweight-theme-for-pelican.html" rel="alternate"></link><published>2018-11-16T00:00:00+11:00</published><updated>2018-11-16T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-16:/Peli-Kiera/a-lightweight-theme-for-pelican.html</id><summary type="html">&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Peli-Kiera</title><link href="https://aleylara.github.io/Peli-Kiera/" rel="alternate"></link><link href="https://aleylara.github.io/Peli-Kiera/feeds/all.atom.xml" rel="self"></link><id>https://aleylara.github.io/Peli-Kiera/</id><updated>2018-11-16T00:00:00+11:00</updated><subtitle>A Pelican theme for creative writing</subtitle><entry><title>A lightweight theme for Pelican</title><link href="https://aleylara.github.io/Peli-Kiera/a-lightweight-theme-for-pelican.html" rel="alternate"></link><published>2018-11-16T00:00:00+11:00</published><updated>2018-11-16T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-16:/Peli-Kiera/a-lightweight-theme-for-pelican.html</id><summary type="html">&lt;h1&gt;Peli-Kiera&lt;/h1&gt;
+&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
 Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&lt;/a&gt; project for the inspiration.&lt;/p&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;
+&lt;p&gt;Live-Demo at &lt;a href="https://aleylara.github.io/Peli-Kiera"&gt;https://aleylara.github.io/Peli-Kiera&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Installation&lt;/h3&gt;
-&lt;p&gt;The theme can be installed by cloning the repo into your 
+&lt;p&gt;&lt;a href="https://docs.getpelican.com/en/stable/"&gt;Pelican-Docs&lt;/a&gt; will guide you through the initial installation.
+Once inside the project directory, Peli-Kiera theme can be installed by cloning the repo into your 
 themes path and pointing to it in your &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
-&lt;span class="nb"&gt;cd&lt;/span&gt; project-dir/themes
+&lt;span class="nb"&gt;cd&lt;/span&gt; project-dir
+pelican-quickstart
+mkdir themes
+&lt;span class="nb"&gt;cd&lt;/span&gt; themes
 git clone https://github.com/aleylara/Peli-Kiera
 
-&lt;span class="c1"&gt;# Path …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
+&lt;span class="c1"&gt;# Add path to your theme directory in pelicanconf.py&lt;/span&gt;
+&lt;span class="nv"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;themes/Peli-Kiera&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In order to …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Peli-Kiera&lt;/h1&gt;
+&lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
 Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&lt;/a&gt; project for the inspiration.&lt;/p&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;
+&lt;p&gt;Live-Demo at &lt;a href="https://aleylara.github.io/Peli-Kiera"&gt;https://aleylara.github.io/Peli-Kiera&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Installation&lt;/h3&gt;
-&lt;p&gt;The theme can be installed by cloning the repo into your 
+&lt;p&gt;&lt;a href="https://docs.getpelican.com/en/stable/"&gt;Pelican-Docs&lt;/a&gt; will guide you through the initial installation.
+Once inside the project directory, Peli-Kiera theme can be installed by cloning the repo into your 
 themes path and pointing to it in your &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Create a themes directory if it doesn&amp;#39;t exists&lt;/span&gt;
-&lt;span class="nb"&gt;cd&lt;/span&gt; project-dir/themes
+&lt;span class="nb"&gt;cd&lt;/span&gt; project-dir
+pelican-quickstart
+mkdir themes
+&lt;span class="nb"&gt;cd&lt;/span&gt; themes
 git clone https://github.com/aleylara/Peli-Kiera
 
-&lt;span class="c1"&gt;# Path to your theme directory in pelicanconf.py&lt;/span&gt;
+&lt;span class="c1"&gt;# Add path to your theme directory in pelicanconf.py&lt;/span&gt;
 &lt;span class="nv"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;themes/Peli-Kiera&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In order to get read times and links between articles, the theme requires &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/readtime"&gt;pelican-readtime&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/neighbors"&gt;neighbors&lt;/a&gt; plugins.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Path to your plugins directory in pelicanconf.py&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; project-dir/
+&lt;span class="c1"&gt;# Please note the plugins repo is quite large and you only need the two.&lt;/span&gt;
+git clone https://github.com/getpelican/pelican-plugins
+
+&lt;span class="c1"&gt;# Add path to your plugins directory in pelicanconf.py&lt;/span&gt;
 &lt;span class="nv"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &lt;span class="nv"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;readtime&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;neighbors&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;p&gt;A sample article header.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Title: Simple is better than complex 
+Date: 2018-11-14
+Tags: python, jupyter, library
+Description: 
+Category: 
+
+### Introduction
+
+This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Go ahead and create few articles in respective directories.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Generate articles and populate output&lt;/span&gt;
+pelican content -o output -s pelicanconf.py
+&lt;span class="c1"&gt;# start the local server on http://localhost:8000/&lt;/span&gt;
+pelican --autoreload --listen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Final project directory structure should look similiar to this.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;(&lt;/span&gt;Pelican&lt;span class="o"&gt;)&lt;/span&gt; ➜ project-dir tree
+│                                  
+├── Makefile
+├── content/
+│   ├── Blog Posts/
+│   │   ├── article-one.md
+│   │   ├── article-two.md
+│   │   └── article-three.md   
+│   ├── Research/
+│   │   ├── article-one.md
+│   │   ├── article-two.md
+│   │   └── article-three.md
+│   ├── images/
+│   │   ├── camera-2008479_640.png
+│   │   ├── camera-wide.png
+│   │   └── wide-wide.png
+│   └── pages/
+│       └── about.md
+├── output/ 
+│ 
+├── pelicanconf.py
+├── pelican-plugins/
+│   ├── neighbors
+│   │   ├── Readme.rst
+│   │   ├── __init__.py
+│   │   └── neighbors.py
+│   └── readtime
+│       ├── README.md
+│       ├── __init__.py
+│       └── readtime.py     
+├── publishconf.py
+├── tasks.py
+└── themes
+    └── Peli-Kiera/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h3&gt;Settings&lt;/h3&gt;
+&lt;p&gt;Example &lt;code&gt;pelicanconf.py&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
 &lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
@@ -35,17 +114,18 @@ git clone https://github.com/aleylara/Peli-Kiera
 &lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Author&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;COPYRIGHT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2019&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Site-Name&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;SITESUBTITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Site&lt;/span&gt; &lt;span class="n"&gt;Subtitle&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://my-pelican-blog-address.io&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITESUBTITLE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Site Subtitle&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;America/New_York&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;DEFAULT_LANG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;en&amp;#39;&lt;/span&gt;
 
 &lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;themes/Peli-Kiera&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;PLUGIN_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican-plugins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;readtime&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;neighbors&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;STATIC_PATHS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;images&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;SUMMARY_MAX_LENGTH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;
+&lt;span class="c1"&gt;# Article summary length on main index page&lt;/span&gt;
+&lt;span class="n"&gt;SUMMARY_MAX_LENGTH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;
 &lt;span class="n"&gt;DEFAULT_PAGINATION&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
 &lt;span class="n"&gt;GITHUB_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com/&amp;#39;&lt;/span&gt;
 
@@ -88,23 +168,28 @@ git clone https://github.com/aleylara/Peli-Kiera
 &lt;p&gt;The pagination is presented with the current page and 3 neighboring pages on either side. &lt;/p&gt;
 &lt;p&gt;&amp;lt;&amp;lt;  &amp;lt;   7  8  9  &lt;strong&gt;10&lt;/strong&gt;  11  12  13  &amp;gt;  &amp;gt;&amp;gt;&lt;/p&gt;
 &lt;p&gt;Images can be moved on page by adding the tag &lt;code&gt;#float-right&lt;/code&gt;, &lt;code&gt;#float-left&lt;/code&gt;, &lt;code&gt;#mid&lt;/code&gt; and &lt;code&gt;#full&lt;/code&gt; in your markdown.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  !&lt;span class="o"&gt;[&lt;/span&gt;Title&lt;span class="o"&gt;]({&lt;/span&gt;static&lt;span class="o"&gt;}&lt;/span&gt;/images/my_image-600x400.png#float-right &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;!&lt;span class="o"&gt;[&lt;/span&gt;Title&lt;span class="o"&gt;]({&lt;/span&gt;static&lt;span class="o"&gt;}&lt;/span&gt;/images/my_image-600x400.png#float-right &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Similarly, the placement can also be applied to html directly by wrapping images in a &lt;code&gt;&amp;lt;figure class="placement"&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;float-left&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;path-to/images/my_image-600x400.png&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;float-left&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;path-to/images/my_image-600x400.png&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.&lt;/p&gt;</content><category term="Posts"></category><category term="theme"></category><category term="design"></category><category term="pelican"></category></entry><entry><title>Image placement</title><link href="https://aleylara.github.io/Peli-Kiera/image-placement.html" rel="alternate"></link><published>2018-11-15T00:00:00+11:00</published><updated>2018-11-15T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-15:/Peli-Kiera/image-placement.html</id><summary type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
+&lt;p&gt;Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.&lt;/p&gt;</content><category term="Blog Posts"></category><category term="theme"></category><category term="design"></category><category term="pelican"></category></entry><entry><title>Image placement</title><link href="https://aleylara.github.io/Peli-Kiera/image-placement.html" rel="alternate"></link><published>2018-11-15T00:00:00+11:00</published><updated>2018-11-15T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-15:/Peli-Kiera/image-placement.html</id><summary type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
 &lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
 &lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;
 Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
 Quaeri sagittas Solis praedelassat aera pretium, a voces secundo tellus. Nomina
 aura redeamus postquam regno, scribit lacrimisque demisso pulcherrime fecerat.
 Turba amor utinam humo ruunt funera, Cythereiadasque soror non remige cam in
-visum origine avellere, hoste. Deceant posita iuncti, ingens, iniuria sub …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
+visum origine avellere, hoste. Deceant posita iuncti, ingens, iniuria sub fer nostrae ausam Cenaeo
+os Byblis omnia. Nisi mutatas steterat addere. Interque tantae fama; imperio et
+expertus profugam perlucentes saepe, Pagasaea confinia, dum. &lt;em&gt;Ignes coma&lt;/em&gt;
+postes, septem, si Pindo, amor ut putes quaeritur, diu.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bene si incunabula saxo Peparethos et …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
 &lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
 &lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;
 Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
@@ -168,12 +253,20 @@ cras. Dumque ille loqui, est luctus lacriment nostri est adspicio fatis captivis
 nullam capitis ut cunasque inquit? Tenditur et primum AI penitusque ad ranae
 excussit ossibus creatus: Bacche verto, litus veniam! Ille corpora instat nobis
 pars animum dant: vel equos et.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="image3" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#full" title="#full"&gt;&lt;/p&gt;</content><category term="Posts"></category><category term="tools"></category><category term="data"></category><category term="jupyter"></category></entry><entry><title>Simple is better than complex</title><link href="https://aleylara.github.io/Peli-Kiera/simple-is-better-than-complex.html" rel="alternate"></link><published>2018-11-14T00:00:00+11:00</published><updated>2018-11-14T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-14:/Peli-Kiera/simple-is-better-than-complex.html</id><summary type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image3" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#full" title="#full"&gt;&lt;/p&gt;</content><category term="Blog Posts"></category><category term="tools"></category><category term="data"></category><category term="jupyter"></category></entry><entry><title>Simple is better than complex</title><link href="https://aleylara.github.io/Peli-Kiera/simple-is-better-than-complex.html" rel="alternate"></link><published>2018-11-14T00:00:00+11:00</published><updated>2018-11-14T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-14:/Peli-Kiera/simple-is-better-than-complex.html</id><summary type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;"&lt;strong&gt;This is a blockquote&lt;/strong&gt;. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;## Simple …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;## Simple is better than complex&lt;/span&gt;
+
+&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&amp;quot;Gur Mra bs Clguba, ol Gvz Crgref&lt;/span&gt;
+&lt;span class="s2"&gt;Ornhgvshy vf orggre guna htyl.&lt;/span&gt;
+&lt;span class="s2"&gt;Rkcyvpvg vf orggre guna vzcyvpvg.&lt;/span&gt;
+&lt;span class="s2"&gt;Fvzcyr vf orggre guna pbzcyrk.&lt;/span&gt;
+&lt;span class="s2"&gt;Pbzcyrk vf orggre guna pbzcyvpngrq.&lt;/span&gt;
+&lt;span class="s2"&gt;Syng vf orggre guna arfgrq.&lt;/span&gt;
+&lt;span class="s2"&gt;Fcnefr vf orggre …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;"&lt;strong&gt;This is a blockquote&lt;/strong&gt;. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -219,14 +312,18 @@ pars animum dant: vel equos et.&lt;/p&gt;
     &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Gunaxf sbe fgbccvat ol!..&lt;/p&gt;</content><category term="Posts"></category><category term="python"></category><category term="jupyter"></category><category term="library"></category></entry><entry><title>Barba non facit philosophum</title><link href="https://aleylara.github.io/Peli-Kiera/barba-non-facit-philosophum.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/barba-non-facit-philosophum.html</id><summary type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
+&lt;p&gt;Gunaxf sbe fgbccvat ol!..&lt;/p&gt;</content><category term="Blog Posts"></category><category term="python"></category><category term="jupyter"></category><category term="library"></category></entry><entry><title>Barba non facit philosophum</title><link href="https://aleylara.github.io/Peli-Kiera/barba-non-facit-philosophum.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/barba-non-facit-philosophum.html</id><summary type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
 Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
 ubi et cetera comites licet, ille &lt;strong&gt;quibus&lt;/strong&gt;. Habet luctu Peragit placidos qua
 formosior putatis cum fuerat illa alis Typhoea, hiscere. Aeacus et traxere
 &lt;a href="http://nantemque-mediis.com/etsed.html"&gt;nondum&lt;/a&gt;, his filia, celeri ministri
 sospes. Simul fas. &lt;strong&gt;Finxit&lt;/strong&gt; edam mora spirarunt passim claro Tantalus, ipsa
 herbis amat meo telluris pro, vero &lt;strong&gt;dea&lt;/strong&gt; adhuc.&lt;/p&gt;
-&lt;p&gt;Laedere domos ignes …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
+&lt;p&gt;Laedere domos ignes, e est prosit, tantum radiabant nomina Minos. Celebrare
+Memnonides miluus rerum, est suis est redeuntibus &lt;strong&gt;Latias clementissimus&lt;/strong&gt;,
+suus vitasset multa. Non mille puerosque vultu!&lt;/p&gt;
+&lt;p&gt;Est &lt;strong&gt;adspicit&lt;/strong&gt;; dat meos occurret sedit, tempora suo vidit et siccaeque,
+capessamus. Inponit per magis moriuntur …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
 Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
 ubi et cetera comites licet, ille &lt;strong&gt;quibus&lt;/strong&gt;. Habet luctu Peragit placidos qua
 formosior putatis cum fuerat illa alis Typhoea, hiscere. Aeacus et traxere
@@ -263,13 +360,16 @@ Marte visa sanabilis vultumque opus auditurum dixit tamen, a. Ferendo aestu.
 Curibusque verba mitia; cetera qui labori, adspicit deque spoliantis haec
 inmunemque.&lt;/p&gt;
 &lt;p&gt;Mens suam, potentibus servat Gorgoneum fecit; inde falcato putatis alta. Neque
-Melantho digitos peperisse lucis: responderat inque paelicis opis suadent!&lt;/p&gt;</content><category term="Posts"></category><category term="design"></category><category term="css"></category><category term="theme"></category></entry><entry><title>Dedignata obstitit super</title><link href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-super.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/dedignata-obstitit-super.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+Melantho digitos peperisse lucis: responderat inque paelicis opis suadent!&lt;/p&gt;</content><category term="Blog Posts"></category><category term="design"></category><category term="css"></category><category term="theme"></category></entry><entry><title>Dedignata obstitit super</title><link href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-super.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/dedignata-obstitit-super.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
 &lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
 insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
-premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
@@ -326,13 +426,16 @@ ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
 &lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
 fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
 deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
-colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Posts"></category><category term="data"></category><category term="productivity"></category><category term="python"></category></entry><entry><title>Volucrum cecidit sponte</title><link href="https://aleylara.github.io/Peli-Kiera/volucrum-cecidit-sponte.html" rel="alternate"></link><published>2018-06-06T00:00:00+10:00</published><updated>2018-06-06T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-06:/Peli-Kiera/volucrum-cecidit-sponte.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Blog Posts"></category><category term="data"></category><category term="productivity"></category><category term="python"></category></entry><entry><title>Volucrum cecidit sponte</title><link href="https://aleylara.github.io/Peli-Kiera/volucrum-cecidit-sponte.html" rel="alternate"></link><published>2018-06-06T00:00:00+10:00</published><updated>2018-06-06T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-06:/Peli-Kiera/volucrum-cecidit-sponte.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
 &lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
 insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
-premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
@@ -405,13 +508,16 @@ ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
 &lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
 fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
 deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
-colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Quae bracchia occidit amplectitur</title><link href="https://aleylara.github.io/Peli-Kiera/quae-bracchia-occidit-amplectitur.html" rel="alternate"></link><published>2018-06-05T00:00:00+10:00</published><updated>2018-06-05T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-05:/Peli-Kiera/quae-bracchia-occidit-amplectitur.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Blog Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Quae bracchia occidit amplectitur</title><link href="https://aleylara.github.io/Peli-Kiera/quae-bracchia-occidit-amplectitur.html" rel="alternate"></link><published>2018-06-05T00:00:00+10:00</published><updated>2018-06-05T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-05:/Peli-Kiera/quae-bracchia-occidit-amplectitur.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
 &lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
 insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
-premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
@@ -470,13 +576,16 @@ colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;
 &lt;p&gt;The &lt;time datetime="2005-05-15 19:00"&gt;time element&lt;/time&gt; example&lt;/p&gt;
 &lt;p&gt;The &lt;u&gt;u element&lt;/u&gt; example&lt;/p&gt;
 &lt;p&gt;The &lt;var&gt;var element&lt;/var&gt; example&lt;/p&gt;
-&lt;hr&gt;</content><category term="Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Dedignata obstitit surrexit super</title><link href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-surrexit-super.html" rel="alternate"></link><published>2018-06-04T00:00:00+10:00</published><updated>2018-06-04T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-04:/Peli-Kiera/dedignata-obstitit-surrexit-super.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+&lt;hr&gt;</content><category term="Research"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Dedignata obstitit surrexit super</title><link href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-surrexit-super.html" rel="alternate"></link><published>2018-06-04T00:00:00+10:00</published><updated>2018-06-04T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-04:/Peli-Kiera/dedignata-obstitit-surrexit-super.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
 &lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
 insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
-premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
@@ -507,13 +616,16 @@ ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
 &lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
 fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
 deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
-colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Posts"></category><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Quae et ferre tapetibus dabit mirantibus poscitur</title><link href="https://aleylara.github.io/Peli-Kiera/quae-et-ferre-tapetibus-dabit-mirantibus-poscitur.html" rel="alternate"></link><published>2018-06-03T00:00:00+10:00</published><updated>2018-06-03T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-03:/Peli-Kiera/quae-et-ferre-tapetibus-dabit-mirantibus-poscitur.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Research"></category><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Quae et ferre tapetibus dabit mirantibus poscitur</title><link href="https://aleylara.github.io/Peli-Kiera/quae-et-ferre-tapetibus-dabit-mirantibus-poscitur.html" rel="alternate"></link><published>2018-06-03T00:00:00+10:00</published><updated>2018-06-03T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-03:/Peli-Kiera/quae-et-ferre-tapetibus-dabit-mirantibus-poscitur.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
 &lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
 insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
-premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
@@ -544,13 +656,16 @@ ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
 &lt;p&gt;Dixit contentusque pectora Hectoreis haerent, deam vocavit, Iuli non undis parce
 fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
 deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
-colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Posts"></category><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Eque porro quisquam est</title><link href="https://aleylara.github.io/Peli-Kiera/eque-porro-quisquam-est.html" rel="alternate"></link><published>2018-06-02T00:00:00+10:00</published><updated>2018-06-02T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-02:/Peli-Kiera/eque-porro-quisquam-est.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Research"></category><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Eque porro quisquam est</title><link href="https://aleylara.github.io/Peli-Kiera/eque-porro-quisquam-est.html" rel="alternate"></link><published>2018-06-02T00:00:00+10:00</published><updated>2018-06-02T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-02:/Peli-Kiera/eque-porro-quisquam-est.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
 &lt;p&gt;Dedignata obstitit surrexit super, bicorni viri incedit in erat, terebrata
 insula ex &lt;a href="http://www.amatum-hoc.com/dum-dat"&gt;alpina neu&lt;/a&gt; Hiems maximus? Lignum
-premit adspicit vertice o …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
+premit adspicit vertice o comae iam est flamma voto flectebat! In equae tabellae
+invadere trahebat ait osculaque in parant attulerat tu refoventque alis medios
+vides dare. Vitam Hebre contigerant abluit &lt;em&gt;populi&lt;/em&gt; est quoque perque: precibus
+illo Nestora sororum ut. Ulixis posset, &lt;a href="http://www.ante.org/"&gt;nomenque&lt;/a&gt; et sub …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
 olim, et vota praesignia solvi; voce gremio.&lt;/p&gt;
@@ -589,12 +704,15 @@ colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note: the &lt;a href="http://html5doctor.com/the-figure-figcaption-elements/"&gt;Figure-Figcaption&lt;/a&gt; and &lt;a href="http://html5doctor.com/the-details-and-summary-elements/"&gt;Details-Summary&lt;/a&gt; elements are not currently supported in markdown.&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;</content><category term="Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>de Finibus Bonorum Malorum</title><link href="https://aleylara.github.io/Peli-Kiera/de-finibus-bonorum-malorum.html" rel="alternate"></link><published>2017-10-26T00:00:00+11:00</published><updated>2017-10-26T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-26:/Peli-Kiera/de-finibus-bonorum-malorum.html</id><summary type="html">&lt;h3&gt;Eque porro quisquam est&lt;/h3&gt;
+&lt;hr&gt;</content><category term="Blog Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>de Finibus Bonorum Malorum</title><link href="https://aleylara.github.io/Peli-Kiera/de-finibus-bonorum-malorum.html" rel="alternate"></link><published>2017-10-26T00:00:00+11:00</published><updated>2017-10-26T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-26:/Peli-Kiera/de-finibus-bonorum-malorum.html</id><summary type="html">&lt;h3&gt;Eque porro quisquam est&lt;/h3&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
 irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-cupidatat …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Eque porro quisquam est&lt;/h3&gt;
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;voluptatem quia voluptas
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+eaque ipsa quae ab illo inventore veritatis et …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Eque porro quisquam est&lt;/h3&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
@@ -608,20 +726,18 @@ voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolo
 sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
 veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
 autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
-eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>At vero eos et accusamus et iusto</title><link href="https://aleylara.github.io/Peli-Kiera/at-vero-eos-et-accusamus-et-iusto.html" rel="alternate"></link><published>2017-10-16T00:00:00+11:00</published><updated>2017-10-16T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-16:/Peli-Kiera/at-vero-eos-et-accusamus-et-iusto.html</id><summary type="html">&lt;h3&gt;Quae bracchia occidit amplectitur procul&lt;/h3&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Quae bracchia occidit amplectitur procul&lt;/h3&gt;
+eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="Blog Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>At vero eos et accusamus et iusto</title><link href="https://aleylara.github.io/Peli-Kiera/at-vero-eos-et-accusamus-et-iusto.html" rel="alternate"></link><published>2017-10-16T00:00:00+11:00</published><updated>2017-10-16T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-16:/Peli-Kiera/at-vero-eos-et-accusamus-et-iusto.html</id><content type="html">&lt;h3&gt;Quae bracchia occidit amplectitur procul&lt;/h3&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
 irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</content><category term="Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Quis autem vel eum iure reprehenderit</title><link href="https://aleylara.github.io/Peli-Kiera/quis-autem-vel-eum-iure-reprehenderit.html" rel="alternate"></link><published>2017-10-06T00:00:00+11:00</published><updated>2017-10-06T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-06:/Peli-Kiera/quis-autem-vel-eum-iure-reprehenderit.html</id><summary type="html">&lt;h3&gt;Sed ut perspiciatis unde omnis&lt;/h3&gt;
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</content><category term="Blog Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Quis autem vel eum iure reprehenderit</title><link href="https://aleylara.github.io/Peli-Kiera/quis-autem-vel-eum-iure-reprehenderit.html" rel="alternate"></link><published>2017-10-06T00:00:00+11:00</published><updated>2017-10-06T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-10-06:/Peli-Kiera/quis-autem-vel-eum-iure-reprehenderit.html</id><summary type="html">&lt;h3&gt;Sed ut perspiciatis unde omnis&lt;/h3&gt;
 &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
 voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-voluptatem sequi nesciunt. Neque …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Sed ut perspiciatis unde omnis&lt;/h3&gt;
+voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
+veniam, quis nostrum exercitationem ullam corporis suscipit …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Sed ut perspiciatis unde omnis&lt;/h3&gt;
 &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
 voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
@@ -629,12 +745,14 @@ voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolo
 sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
 veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
 autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
-eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="Posts"></category><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Der gemach Kokolores</title><link href="https://aleylara.github.io/Peli-Kiera/der-gemach-kokolores.html" rel="alternate"></link><published>2017-09-29T00:00:00+10:00</published><updated>2017-09-29T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-09-29:/Peli-Kiera/der-gemach-kokolores.html</id><summary type="html">&lt;h3&gt;Nemo enim ipsam&lt;/h3&gt;
+eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="Blog Posts"></category><category term="data"></category><category term="python"></category><category term="design"></category></entry><entry><title>Der gemach Kokolores</title><link href="https://aleylara.github.io/Peli-Kiera/der-gemach-kokolores.html" rel="alternate"></link><published>2017-09-29T00:00:00+10:00</published><updated>2017-09-29T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2017-09-29:/Peli-Kiera/der-gemach-kokolores.html</id><summary type="html">&lt;h3&gt;Nemo enim ipsam&lt;/h3&gt;
 &lt;p&gt;voluptatem quia voluptas
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
 voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-voluptatem sequi nesciunt …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Nemo enim ipsam&lt;/h3&gt;
+voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
+veniam, quis nostrum exercitationem ullam corporis …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Nemo enim ipsam&lt;/h3&gt;
 &lt;p&gt;voluptatem quia voluptas
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
@@ -643,4 +761,4 @@ voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolo
 sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
 veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
 autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
-eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="Posts"></category><category term="tools"></category><category term="productivity"></category><category term="data"></category></entry></feed>
+eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;</content><category term="Blog Posts"></category><category term="tools"></category><category term="productivity"></category><category term="data"></category></entry></feed>
