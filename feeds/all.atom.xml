@@ -506,6 +506,8 @@ ille&lt;/a&gt; vertice aliter.&lt;/p&gt;
 fuit, suo muros eo. Tendit preces sacrilegi Stygio est ignes materiam colatur
 deriguit. Hoc silvis, in iacebat, est cura Tres; ira ignava iter penna deus in
 colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content><category term="Blog Posts"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category></entry><entry><title>Markdown Text Elements</title><link href="https://aleylara.github.io/Peli-Kiera/markdown-text-elements.html" rel="alternate"></link><published>2018-06-05T00:00:00+10:00</published><updated>2018-06-05T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-05:/Peli-Kiera/markdown-text-elements.html</id><summary type="html">&lt;h2&gt;&lt;em&gt;Example Text Elements&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;You can find more examples at &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;The &lt;a href="#"&gt;a element&lt;/a&gt; and &lt;a href="https://example.com"&gt;external a element&lt;/a&gt; examples&lt;/p&gt;
 &lt;p&gt;The &lt;abbr&gt;abbr element&lt;/abbr&gt; and an &lt;abbr title="Abbreviation"&gt;abbr&lt;/abbr&gt; element with title examples&lt;/p&gt;
 &lt;p&gt;The &lt;acronym title="A Cowboy Ran One New York Marathon"&gt;ACRONYM&lt;/acronym&gt; element example&lt;/p&gt;
@@ -523,9 +525,9 @@ colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content>
 &lt;p&gt;The &lt;q&gt;q element&lt;/q&gt; example&lt;/p&gt;
 &lt;p&gt;The &lt;q&gt;q element &lt;q&gt;inside&lt;/q&gt; a q element&lt;/q&gt; example&lt;/p&gt;
 &lt;p&gt;The &lt;s&gt;s element&lt;/s&gt; example&lt;/p&gt;
-&lt;p&gt;The &lt;samp&gt;samp element&lt;/samp&gt; example&lt;/p&gt;
-&lt;p&gt;The &lt;small&gt;small element&lt;/small&gt; example&lt;/p&gt;
-&lt;p&gt;The &lt;span&gt;span …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;&lt;em&gt;Example Text Elements&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;samp&gt;samp …&lt;/samp&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;&lt;em&gt;Example Text Elements&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;You can find more examples at &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;The &lt;a href="#"&gt;a element&lt;/a&gt; and &lt;a href="https://example.com"&gt;external a element&lt;/a&gt; examples&lt;/p&gt;
 &lt;p&gt;The &lt;abbr&gt;abbr element&lt;/abbr&gt; and an &lt;abbr title="Abbreviation"&gt;abbr&lt;/abbr&gt; element with title examples&lt;/p&gt;
 &lt;p&gt;The &lt;acronym title="A Cowboy Ran One New York Marathon"&gt;ACRONYM&lt;/acronym&gt; element example&lt;/p&gt;
@@ -554,7 +556,9 @@ colorem toto anus. Quae bracchia occidit amplectitur procul.&lt;/p&gt;</content>
 &lt;p&gt;The &lt;var&gt;var element&lt;/var&gt; example&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;&lt;em&gt;Corresponding Markdown References&lt;/em&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;The &lt;span class="o"&gt;[&lt;/span&gt;a element&lt;span class="o"&gt;](&lt;/span&gt;&lt;span class="c1"&gt;#) and [external a element](https://example.com) examples&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;The * * * Horizontal Rule
+
+The &lt;span class="o"&gt;[&lt;/span&gt;a element&lt;span class="o"&gt;](&lt;/span&gt;&lt;span class="c1"&gt;#) and [external a element](https://example.com) examples&lt;/span&gt;
 
 The &amp;lt;abbr&amp;gt;abbr element&amp;lt;/abbr&amp;gt; and an &amp;lt;abbr &lt;span class="nv"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Abbreviation&amp;quot;&lt;/span&gt;&amp;gt;abbr&amp;lt;/abbr&amp;gt; element with title examples
 
@@ -606,7 +610,7 @@ The &amp;lt;u&amp;gt;u element&amp;lt;/u&amp;gt; example
 
 The &amp;lt;var&amp;gt;var element&amp;lt;/var&amp;gt; example
 
-The * * * Horizontal divider
+The * * * Horizontal Rule
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Research"></category><category term="data"></category><category term="science"></category><category term="jupyter"></category><category term="markdown"></category></entry><entry><title>Dedignata obstitit surrexit super</title><link href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-surrexit-super.html" rel="alternate"></link><published>2018-06-04T00:00:00+10:00</published><updated>2018-06-04T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-04:/Peli-Kiera/dedignata-obstitit-surrexit-super.html</id><summary type="html">&lt;p&gt;Iugeribus exhalantem, comitant laedi cornuaque patet nec obscenas dignus; ara
 stravit dubitat de me talibus. &lt;em&gt;Vittisconcutiens et pondere&lt;/em&gt; minuente mandata et
 oscula! Tisiphone et &lt;strong&gt;mediam Coronis&lt;/strong&gt; in cum excitat palmas Doridaque inflata
