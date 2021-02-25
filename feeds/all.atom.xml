@@ -2,8 +2,6 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Peli-Kiera</title><link href="https://aleylara.github.io/Peli-Kiera/" rel="alternate"></link><link href="https://aleylara.github.io/Peli-Kiera/feeds/all.atom.xml" rel="self"></link><id>https://aleylara.github.io/Peli-Kiera/</id><updated>2018-11-16T00:00:00+11:00</updated><subtitle>A Pelican theme for creative writing</subtitle><entry><title>A lightweight theme for Pelican</title><link href="https://aleylara.github.io/Peli-Kiera/a-lightweight-theme-for-pelican.html" rel="alternate"></link><published>2018-11-16T00:00:00+11:00</published><updated>2018-11-16T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-16:/Peli-Kiera/a-lightweight-theme-for-pelican.html</id><summary type="html">&lt;h1&gt;Peli-Kiera&lt;/h1&gt;
 &lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
 Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&lt;/a&gt; project for the inspiration.&lt;/p&gt;
-&lt;h3&gt;Demo&lt;/h3&gt;
-&lt;p&gt;Live-Demo at &lt;a href="https://aleylara.github.io/Peli-Kiera"&gt;https://aleylara.github.io/Peli-Kiera&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Installation&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://docs.getpelican.com/en/stable/"&gt;Pelican-Docs&lt;/a&gt; will guide you through the initial installation.
 Once inside the project directory, Peli-Kiera theme can be installed by cloning the repo into your 
@@ -19,11 +17,9 @@ git clone https://github.com/aleylara/Peli-Kiera
 &lt;span class="nv"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;themes/Peli-Kiera&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;In order to …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Peli-Kiera&lt;/h1&gt;
+&lt;p&gt;In order to get read times and links between articles, the …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Peli-Kiera&lt;/h1&gt;
 &lt;p&gt;Peli-Kiera is a theme for the Pelican static site generator.
 Thanks to the &lt;a href="https://github.com/avianto/hugo-kiera"&gt;Hugo-Kiera&lt;/a&gt; project for the inspiration.&lt;/p&gt;
-&lt;h3&gt;Demo&lt;/h3&gt;
-&lt;p&gt;Live-Demo at &lt;a href="https://aleylara.github.io/Peli-Kiera"&gt;https://aleylara.github.io/Peli-Kiera&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Installation&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://docs.getpelican.com/en/stable/"&gt;Pelican-Docs&lt;/a&gt; will guide you through the initial installation.
 Once inside the project directory, Peli-Kiera theme can be installed by cloning the repo into your 
@@ -179,8 +175,8 @@ pelican --autoreload --listen
 
 &lt;p&gt;Minimum image width of 600px is recommended. Images scale accordingly on smaller screens.&lt;/p&gt;</content><category term="Blog Posts"></category><category term="theme"></category><category term="design"></category><category term="pelican"></category></entry><entry><title>Image placement</title><link href="https://aleylara.github.io/Peli-Kiera/image-placement.html" rel="alternate"></link><published>2018-11-15T00:00:00+11:00</published><updated>2018-11-15T00:00:00+11:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-11-15:/Peli-Kiera/image-placement.html</id><summary type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
 &lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
-&lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;
-Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
+&lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;&lt;/p&gt;
+&lt;p&gt;Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
 Quaeri sagittas Solis praedelassat aera pretium, a voces secundo tellus. Nomina
 aura redeamus postquam regno, scribit lacrimisque demisso pulcherrime fecerat.
 Turba amor utinam humo ruunt funera, Cythereiadasque soror non remige cam in
@@ -191,8 +187,8 @@ postes, septem, si Pindo, amor ut putes quaeritur, diu.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Bene si incunabula saxo Peparethos et …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h3&gt;Float Image Right&lt;/h3&gt;
 &lt;h6&gt;&lt;em&gt;Switch to desktop site to view&lt;/em&gt;&lt;/h6&gt;
-&lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;
-Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
+&lt;p&gt;&lt;img alt="image1" src="https://aleylara.github.io/Peli-Kiera/images/camera-2008479_640.png#float-right" title="#float-right"&gt;&lt;/p&gt;
+&lt;p&gt;Lorem markdownum iuvenumque colebat pressa, frustra formosus quoque conterruit.
 Quaeri sagittas Solis praedelassat aera pretium, a voces secundo tellus. Nomina
 aura redeamus postquam regno, scribit lacrimisque demisso pulcherrime fecerat.
 Turba amor utinam humo ruunt funera, Cythereiadasque soror non remige cam in
@@ -312,8 +308,8 @@ pars animum dant: vel equos et.&lt;/p&gt;
     &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Gunaxf sbe fgbccvat ol!..&lt;/p&gt;</content><category term="Blog Posts"></category><category term="python"></category><category term="jupyter"></category><category term="library"></category></entry><entry><title>Barba non facit philosophum</title><link href="https://aleylara.github.io/Peli-Kiera/barba-non-facit-philosophum.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/barba-non-facit-philosophum.html</id><summary type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
-Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
+&lt;p&gt;Gunaxf sbe fgbccvat ol!..&lt;/p&gt;</content><category term="Blog Posts"></category><category term="python"></category><category term="jupyter"></category><category term="library"></category></entry><entry><title>Barba non facit philosophum</title><link href="https://aleylara.github.io/Peli-Kiera/barba-non-facit-philosophum.html" rel="alternate"></link><published>2018-06-27T00:00:00+10:00</published><updated>2018-06-27T00:00:00+10:00</updated><author><name>Author</name></author><id>tag:aleylara.github.io,2018-06-27:/Peli-Kiera/barba-non-facit-philosophum.html</id><summary type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;&lt;/p&gt;
+&lt;p&gt;Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
 ubi et cetera comites licet, ille &lt;strong&gt;quibus&lt;/strong&gt;. Habet luctu Peragit placidos qua
 formosior putatis cum fuerat illa alis Typhoea, hiscere. Aeacus et traxere
 &lt;a href="http://nantemque-mediis.com/etsed.html"&gt;nondum&lt;/a&gt;, his filia, celeri ministri
@@ -323,8 +319,8 @@ herbis amat meo telluris pro, vero &lt;strong&gt;dea&lt;/strong&gt; adhuc.&lt;/p
 Memnonides miluus rerum, est suis est redeuntibus &lt;strong&gt;Latias clementissimus&lt;/strong&gt;,
 suus vitasset multa. Non mille puerosque vultu!&lt;/p&gt;
 &lt;p&gt;Est &lt;strong&gt;adspicit&lt;/strong&gt;; dat meos occurret sedit, tempora suo vidit et siccaeque,
-capessamus. Inponit per magis moriuntur …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;
-Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
+capessamus. Inponit per magis moriuntur …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="image1" src="images/camera-2008479_640.png" title="Pixabay"&gt;&lt;/p&gt;
+&lt;p&gt;Lorem markdownum &lt;em&gt;capillo&lt;/em&gt; Herculei est dea tenetque adimam sparsit, debueram,
 ubi et cetera comites licet, ille &lt;strong&gt;quibus&lt;/strong&gt;. Habet luctu Peragit placidos qua
 formosior putatis cum fuerat illa alis Typhoea, hiscere. Aeacus et traxere
 &lt;a href="http://nantemque-mediis.com/etsed.html"&gt;nondum&lt;/a&gt;, his filia, celeri ministri
