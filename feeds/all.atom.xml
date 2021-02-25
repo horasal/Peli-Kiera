@@ -49,8 +49,8 @@ git clone https://github.com/getpelican/pelican-plugins
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Title: Simple is better than complex 
 Date: 2018-11-14
 Tags: python, jupyter, library
-Description: 
-Category: 
+Description: The Zen of Python
+Category: Python
 
 ### Introduction
 
