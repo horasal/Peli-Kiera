@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Peli-Kiera - Markdown Text Elements</title>
+        <title>Peli-Kiera - Markdown</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda"/>
@@ -12,11 +12,6 @@
             <link href="https://aleylara.github.io/Peli-Kiera/
 feeds/all.atom.xml"
                   type="application/atom+xml" rel="alternate" title="Peli-Kiera Atom Feed"/>
-
-<meta name="tags" content="data" />
-<meta name="tags" content="science" />
-<meta name="tags" content="jupyter" />
-<meta name="tags" content="markdown" />
 </head>
 <body>
 <a href="https://github.com/aleylara/Peli-Kiera" class="github-corner" aria-label="View source on GitHub">
@@ -72,36 +67,126 @@ feeds/all.atom.xml"
         <ul>
                     <li><a href="https://aleylara.github.io/Peli-Kiera/category/design-patterns.html"> Design Patterns </a></li>
                     <li><a href="https://aleylara.github.io/Peli-Kiera/category/python.html"> Python </a></li>
-                    <li><a                         class="active" href="https://aleylara.github.io/Peli-Kiera/category/research.html"> Research </a></li>
+                    <li><a  class="active" href="https://aleylara.github.io/Peli-Kiera/pages/markdown.html">Markdown</a>
+                    </li>
                     <li><a href="https://aleylara.github.io/Peli-Kiera/pages/about-pelican.html">About Pelican</a>
                     </li>
         </ul>
     </nav>
-<main>
-    <article>
-        <h1>Markdown Text Elements</h1>
-        
-        <aside>
-            <ul>
-                <li>
-                    <time datetime="2018-06-05 00:00:00+10:00">Jun 05, 2018</time>
-                </li>
-                <li>2 min read</li>
-                <li>
-                    Categories:
-                    <a href="https://aleylara.github.io/Peli-Kiera/category/research.html"><em>Research</em></a>
-                </li>
-                <li>
-                    Tags:
-                    <a href="https://aleylara.github.io/Peli-Kiera/tag/data.html"><em>#data</em></a>
-                    <a href="https://aleylara.github.io/Peli-Kiera/tag/science.html"><em>#science</em></a>
-                    <a href="https://aleylara.github.io/Peli-Kiera/tag/jupyter.html"><em>#jupyter</em></a>
-                    <a href="https://aleylara.github.io/Peli-Kiera/tag/markdown.html"><em>#markdown</em></a>
-                </li>
-            </ul>
-        </aside>
-        <h2><em>Example Text Elements</em></h2>
-<p>You can find more examples at <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p>
+    <main>
+        <section>
+            <h1>Markdown</h1>
+            
+            <p><strong>Syntax Highlighting</strong>
+&nbsp;</p>
+<p>Using the ``` triple backticks </p>
+<p>Python</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">antigravity</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">antigravity</span><span class="o">.</span><span class="n">fly</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Javascript</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Looks indented but backticks still inline with paragaraphs</span>
+
+        <span class="kd">function</span> <span class="nx">myFunction</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;one&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;First&quot;</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;two&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;Second&quot;</span><span class="p">;</span>
+            <span class="c1">// commented line</span>
+
+        <span class="p">};</span>
+</code></pre></div>
+
+<p>Plain text in code block</p>
+<div class="highlight"><pre><span></span><code>Not sure why but this works &lt;em&gt;text&lt;/em&gt; No syntax highlight.
+</code></pre></div>
+
+<p>Markdown text for the above code block would look like so</p>
+<div class="highlight"><pre><span></span><code>    Using the triple backticks <span class="sb">```</span>
+
+    Python
+
+    <span class="sb">```</span>python
+    import antigravity
+
+    def main<span class="o">()</span>:
+        antigravity.fly<span class="o">()</span>
+
+    <span class="k">if</span> <span class="nv">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span>:
+        main<span class="o">()</span>
+    <span class="sb">```</span>
+
+    Javascript
+
+    <span class="sb">```</span>javascript
+    // Looks indented but backticks still inline with paragaraphs
+
+            <span class="k">function</span> myFunction<span class="o">()</span> <span class="o">{</span>
+                document.getElementById<span class="o">(</span><span class="s2">&quot;one&quot;</span><span class="o">)</span>.innerHTML <span class="o">=</span> <span class="s2">&quot;First&quot;</span><span class="p">;</span>
+                document.getElementById<span class="o">(</span><span class="s2">&quot;two&quot;</span><span class="o">)</span>.innerHTML <span class="o">=</span> <span class="s2">&quot;Second&quot;</span><span class="p">;</span>
+                // commented line
+            <span class="o">}</span><span class="p">;</span>
+    <span class="sb">```</span>
+
+    Plain text in code block
+
+    <span class="sb">```</span>text
+    Not sure why but this works &lt;em&gt;text&lt;/em&gt; No syntax highlight.
+    <span class="sb">```</span>
+</code></pre></div>
+
+<p>Here is an example of a misindented code block.</p>
+<div class="highlight"><pre><span></span><code><span class="err">```bash</span>
+<span class="err">    if [[ -z &quot;$string&quot; ]]; then</span>
+<span class="err">        echo &quot;String is empty&quot;</span>
+<span class="err">    elif [[ -n &quot;$string&quot; ]]; then</span>
+<span class="err">        echo &quot;String is not empty&quot;</span>
+<span class="err">    fi</span>
+<span class="err">```</span>
+</code></pre></div>
+
+<p>And the Markdown paragraph text</p>
+<div class="highlight"><pre><span></span><code>    Here is an example of a misindented code block
+
+        <span class="sb">```</span>bash
+            <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
+            <span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
+            <span class="k">fi</span>
+        <span class="sb">```</span>
+    And the Markdown paragraph text
+</code></pre></div>
+
+<p>If you like to indent code blocks for better readability while typing the Markdown text then you can either keep the ``` backtics inline with paragraph beginnings or use ::: triple colons and indent it like so</p>
+<p>insert pargaraph text here...</p>
+<div class="highlight"><pre><span></span><code>    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
+    <span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
+    <span class="k">fi</span>
+</code></pre></div>
+
+<p>more paragraph text down here...</p>
+<p>And the markdown for the above paragraph would look like this</p>
+<div class="highlight"><pre><span></span><code>insert pargaraph text here...
+
+        :::bash
+            <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
+            <span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
+            <span class="k">fi</span>
+
+more paragraph text down here...
+</code></pre></div>
+
+<p>&nbsp;</p>
+<p><strong>Here are some commonly used text elements</strong></p>
 <hr>
 <p>The <a href="#">a element</a> and <a href="https://example.com">external a element</a> examples</p>
 <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
@@ -129,11 +214,10 @@ feeds/all.atom.xml"
 <p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
 <p>The <u>u element</u> example</p>
 <p>The <var>var element</var> example</p>
+<p>The &nbsp; &nbsp; &nbsp; insert spaces</p>
 <hr>
-<h2><em>Corresponding Markdown References</em></h2>
-<div class="highlight"><pre><span></span><code>The * * * Horizontal Rule
-
-The <span class="o">[</span>a element<span class="o">](</span><span class="c1">#) and [external a element](https://example.com) examples</span>
+<p>Markdown for the text elements above would look like so</p>
+<div class="highlight"><pre><span></span><code>The <span class="o">[</span>a element<span class="o">](</span><span class="c1">#) and [external a element](https://example.com) examples</span>
 
 The &lt;abbr&gt;abbr element&lt;/abbr&gt; and an &lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">&quot;Abbreviation&quot;</span>&gt;abbr&lt;/abbr&gt; element with title examples
 
@@ -185,47 +269,17 @@ The &lt;u&gt;u element&lt;/u&gt; example
 
 The &lt;var&gt;var element&lt;/var&gt; example
 
+The <span class="p">&amp;</span>nbsp<span class="p">;</span> <span class="p">&amp;</span>nbsp<span class="p">;</span> <span class="p">&amp;</span>nbsp<span class="p">;</span> insert spaces
+
+
 The * * * Horizontal Rule
 </code></pre></div>
-    </article>
-    <section class="post-nav">
-        <div id="left-page">
-            <div id="left-link">
-                <div id="left-arrow"><i class="fa fa-chevron-circle-left"></i></div>
-                <a href="https://aleylara.github.io/Peli-Kiera/volucrum-cecidit-sponte.html"> Volucrum cecidit sponte</a>
-            </div>
-        </div>
-        <div id="right-page">
-            <div id="right-link">
-                <a href="https://aleylara.github.io/Peli-Kiera/dedignata-obstitit-surrexit-super.html">Dedignata obstitit surrexit super </a>
-                <div id="right-arrow"><i class="fa fa-chevron-circle-right"></i></div>
-            </div>
-        </div>
-    </section>
-    <div>
-    <div class="comments">
-        <h2>Comments !</h2>
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function () {
-                this.page.url = "https://aleylara.github.io/Peli-Kiera/markdown-text-elements.html";
-                this.page.identifier = "markdown-text-elements";
-                this.page.title = "Markdown Text Elements";
-            };
-            (function () {
-                var d = document,
-                    s = d.createElement('script');
-                s.src = 'https://peli-kiera.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-            powered by
-            Disqus.</a></noscript>
-    </div>
-    </div>
-</main>
+
+<p>&nbsp;</p>
+<p>You can find more examples at <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p>
+<p>&nbsp;</p>
+        </section>
+     </main>
     <footer>
         <h6>
             Rendered by <a href="http://getpelican.com/">Pelican</a> &nbsp;&bull;&nbsp; Theme by <a
