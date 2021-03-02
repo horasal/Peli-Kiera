@@ -182,13 +182,13 @@ feeds/all.atom.xml"
 <p>And the Markdown paragraph text</p>
 <div class="highlight"><pre><span></span><code>    Here is an example of a misindented code block
 
-        <span class="sb">```</span>bash
-            <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
-            <span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
-            <span class="k">fi</span>
-        <span class="sb">```</span>
+        ```bash
+            if [[ -z &quot;$string&quot; ]]; then
+                echo &quot;String is empty&quot;
+            elif [[ -n &quot;$string&quot; ]]; then
+                echo &quot;String is not empty&quot;
+            fi
+        ```
     And the Markdown paragraph text
 </code></pre></div>
 
@@ -206,11 +206,11 @@ feeds/all.atom.xml"
 <div class="highlight"><pre><span></span><code>insert pargaraph text here...
 
         :::bash
-            <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
-            <span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
-            <span class="k">fi</span>
+            if [[ -z &quot;$string&quot; ]]; then
+                echo &quot;String is empty&quot;
+            elif [[ -n &quot;$string&quot; ]]; then
+                echo &quot;String is not empty&quot;
+            fi
 
 more paragraph text down here...
 </code></pre></div>
@@ -247,23 +247,23 @@ more paragraph text down here...
 <p>The &nbsp; &nbsp; &nbsp; insert spaces</p>
 <hr>
 <p>Markdown for the text elements above would look like so</p>
-<div class="highlight"><pre><span></span><code>The <span class="o">[</span>a element<span class="o">](</span><span class="c1">#) and [external a element](https://example.com) examples</span>
+<div class="highlight"><pre><span></span><code>The [a element](#) and [external a element](https://example.com) examples
 
-The &lt;abbr&gt;abbr element&lt;/abbr&gt; and an &lt;abbr <span class="nv">title</span><span class="o">=</span><span class="s2">&quot;Abbreviation&quot;</span>&gt;abbr&lt;/abbr&gt; element with title examples
+The &lt;abbr&gt;abbr element&lt;/abbr&gt; and an &lt;abbr title=&quot;Abbreviation&quot;&gt;abbr&lt;/abbr&gt; element with title examples
 
-The &lt;acronym <span class="nv">title</span><span class="o">=</span><span class="s2">&quot;A Cowboy Ran One New York Marathon&quot;</span>&gt;ACRONYM&lt;/acronym&gt; element example
+The &lt;acronym title=&quot;A Cowboy Ran One New York Marathon&quot;&gt;ACRONYM&lt;/acronym&gt; element example
 
 The **b element** example
 
 The &lt;cite&gt;cite element&lt;/cite&gt; example
 
-The <span class="sb">`</span>code element<span class="sb">`</span> example
+The `code element` example
 
-The &lt;data <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;3967381398&quot;</span>&gt;data element&lt;/data&gt; example
+The &lt;data value=&quot;3967381398&quot;&gt;data element&lt;/data&gt; example
 
 The ~~del element~~ example
 
-The &lt;dfn&gt;dfn element&lt;/dfn&gt; and &lt;dfn <span class="nv">title</span><span class="o">=</span><span class="s2">&quot;Title text&quot;</span>&gt;dfn element with title&lt;/dfn&gt; examples
+The &lt;dfn&gt;dfn element&lt;/dfn&gt; and &lt;dfn title=&quot;Title text&quot;&gt;dfn element with title&lt;/dfn&gt; examples
 
 The _em element_ example
 
@@ -293,13 +293,13 @@ The &lt;sub&gt;sub element&lt;/sub&gt; example
 
 The &lt;sup&gt;sup element&lt;/sup&gt; example
 
-The &lt;<span class="nb">time</span> <span class="nv">datetime</span><span class="o">=</span><span class="s2">&quot;2005-05-15 19:00&quot;</span>&gt;time element&lt;/time&gt; example
+The &lt;time datetime=&quot;2005-05-15 19:00&quot;&gt;time element&lt;/time&gt; example
 
 The &lt;u&gt;u element&lt;/u&gt; example
 
 The &lt;var&gt;var element&lt;/var&gt; example
 
-The <span class="p">&amp;</span>nbsp<span class="p">;</span> <span class="p">&amp;</span>nbsp<span class="p">;</span> <span class="p">&amp;</span>nbsp<span class="p">;</span> insert spaces
+The &amp;nbsp; &amp;nbsp; &amp;nbsp; insert spaces
 
 
 The * * * Horizontal Rule
