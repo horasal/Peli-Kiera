@@ -77,9 +77,9 @@ feeds/all.atom.xml"
         <section>
             <h1>Markdown</h1>
             
-            <p><strong>Syntax Highlighting</strong>
-&nbsp;</p>
-<p>Using the ``` triple backticks </p>
+            <h2>Syntax Highlighting</h2>
+<p>Although code blocks can be rendered by only indenting code snippets with tabs, it is recommended that ``` backticks or ::: colons used for consistency in syntax highlighting colors.</p>
+<h3><u>Using the ``` triple backticks:</u></h3>
 <p>Python</p>
 <div class="highlight"><pre><span></span><code>    <span class="kn">import</span> <span class="nn">antigravity</span>
 
@@ -118,10 +118,8 @@ feeds/all.atom.xml"
 <div class="highlight"><pre><span></span><code>If you prefer just plain text, no &lt;b&gt;Syntax&lt;/b&gt; highlighting.
 </code></pre></div>
 
-<p>Markdown text for the above code blocks would look like so</p>
-<div class="highlight"><pre><span></span><code>    Using the triple backticks ```
-
-    Python
+<p>Markdown text for the above examples above.</p>
+<div class="highlight"><pre><span></span><code>    Python
 
     ```python
         import antigravity
@@ -169,54 +167,73 @@ feeds/all.atom.xml"
     ```
 </code></pre></div>
 
-<p>Here is an example of a misindented code block.</p>
-<div class="highlight"><pre><span></span><code><span class="err">```bash</span>
-<span class="err">    if [[ -z &quot;$string&quot; ]]; then</span>
-<span class="err">        echo &quot;String is empty&quot;</span>
-<span class="err">    elif [[ -n &quot;$string&quot; ]]; then</span>
-<span class="err">        echo &quot;String is not empty&quot;</span>
-<span class="err">    fi</span>
-<span class="err">```</span>
+<h3><u>Using the ::: triple colons:</u></h3>
+<div class="highlight"><pre><span></span><code>    <span class="kn">import</span> <span class="nn">antigravity</span>
+
+    <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+        <span class="n">antigravity</span><span class="o">.</span><span class="n">fly</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+        <span class="n">main</span><span class="p">()</span>
 </code></pre></div>
 
-<p>And the Markdown paragraph text</p>
-<div class="highlight"><pre><span></span><code>    Here is an example of a misindented code block
+<p>Markdown text for the example above.</p>
+<div class="highlight"><pre><span></span><code>:::python
+    import antigravity
 
-        ```bash
-            if [[ -z &quot;$string&quot; ]]; then
-                echo &quot;String is empty&quot;
-            elif [[ -n &quot;$string&quot; ]]; then
-                echo &quot;String is not empty&quot;
-            fi
-        ```
-    And the Markdown paragraph text
+    def main():
+        antigravity.fly()
+
+    if __name__==&#39;__main__&#39;:
+        main()
 </code></pre></div>
 
-<p>If you like to indent code blocks for better readability while typing the Markdown text then you can either keep the ``` backtics inline with paragraph beginnings or you can use ::: triple colons and indent it like so</p>
-<p>insert pargaraph text here...</p>
-<div class="highlight"><pre><span></span><code>    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
-    <span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
-    <span class="k">fi</span>
+<h3><u>Adding line numbers:</u></h3>
+<p>If the first line of the indented code block contains #! followed by language like #!python, then line numbers along with the specified language will be used. 
+If the full path is defined, #!/usr/bin/python, then the path will also get included in code block. If it does not contain a path or / then that it will be ignored. </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
+<span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
+<span class="k">fi</span>
+</code></pre></div>
+</td></tr></table>
+<p>Markdown text for the example above.</p>
+<div class="highlight"><pre><span></span><code>    #!bash
+    if [[ -z &quot;$string&quot; ]]; then
+        echo &quot;String is empty&quot;
+    elif [[ -n &quot;$string&quot; ]]; then
+        echo &quot;String is not empty&quot;
+    fi
 </code></pre></div>
 
-<p>more paragraph text down here...</p>
-<p>And the Markdown for the above paragraph would look like this</p>
-<div class="highlight"><pre><span></span><code>insert pargaraph text here...
-
-        :::bash
-            if [[ -z &quot;$string&quot; ]]; then
-                echo &quot;String is empty&quot;
-            elif [[ -n &quot;$string&quot; ]]; then
-                echo &quot;String is not empty&quot;
-            fi
-
-more paragraph text down here...
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/bash</span>
+<span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;String is empty&quot;</span>
+<span class="k">elif</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;String is not empty&quot;</span>
+<span class="k">fi</span>
+</code></pre></div>
+</td></tr></table>
+<p>Markdown text for the example above</p>
+<div class="highlight"><pre><span></span><code>    #!/usr/bin/bash
+    if [[ -z &quot;$string&quot; ]]; then
+        echo &quot;String is empty&quot;
+    elif [[ -n &quot;$string&quot; ]]; then
+        echo &quot;String is not empty&quot;
+    fi
 </code></pre></div>
 
-<p>&nbsp;</p>
-<p><strong>Here are some commonly used text elements</strong></p>
+<h2>Commonly used Markdown text elements</h2>
 <hr>
 <p>The <a href="#">a element</a> and <a href="https://example.com">external a element</a> examples</p>
 <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
